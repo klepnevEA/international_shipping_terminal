@@ -1,0 +1,96 @@
+.datepicker {
+
+	&  table tr td.active.active {
+		border: 3px solid @green;
+		color: #fff;
+		padding: @sp/3 @sp*2 25px !important;
+		background-color: @green !important;
+		background-image: linear-gradient(to bottom,  @green,  @green);
+	
+	&:hover {
+		border: 3px solid @green;
+	}
+
+	}
+
+
+
+	& table tr td {
+		margin: 15px;
+	}
+
+	&-switch {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&-wrap {
+		width: 100%;
+		font-family: 'Open Sans Bold';
+		font-size: 40px;
+		color: @green;
+	} 
+
+	
+	&-inline {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	& .day {
+		position: relative;
+		z-index:100;
+		border: 3px solid #fff;
+		font-size: 44px;
+		padding: @sp @sp*2 !important;
+		background-color: #FFF;
+		color: @gray;
+		background-image: url(../img/svg/cross.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		border-radius: 10px;
+		
+		&:hover {
+			border: 3px solid #eee;
+		}
+	}
+
+	.table-condensed {
+		color: #000;
+		border-radius: 10px;
+		border-spacing: 10px;
+		//background-color: #bfc3d1 !important;
+		& tbody {
+			background-color: #bfc3d1 !important;
+		}
+
+		& .next {
+			position: relative;
+			right: 125px;
+			background-image: url(../img/svg/arrow_irange_right.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		& .prev {
+			position: relative;
+			left: 125px;
+			background-image: url(../img/svg/arrow_irange_left.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		& .datepicker-switch {
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}

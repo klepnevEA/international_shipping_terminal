@@ -1,19 +1,39 @@
 .btn {
-	display: block;
+	display: inline-block;
 	position: relative;
+	text-align: center;
 	text-decoration: none;
 	color: @green;
 	border-radius: @sp/3;
 	margin-bottom: 10px;
-	border: 1px solid @green;
-	padding: @sp 20px;
+	border: 3px solid @green;
+	padding: 10px 25px;
 	background-color: #fff;
-	font-family: 'PTSans-Bold';
-	font-size: 24px;
+	font-family: 'Open Sans Bold';
+	font-size: 28px;
 	text-transform: uppercase;
 	text-align: center;
-	box-shadow:         0px 5px 9px 0px rgba(50, 50, 50, 0.59);
+	border-radius: 100px;
+	
+	&:hover {
+		box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+	}
 
+	&_go-next {
+		width: 365px;
+		margin-top:150px;
+
+	}
+	&_find {
+		margin-top: @sp;
+		width: 305px;
+		
+		& .btn_title__img {
+			position: relative;
+    		top: 5px;
+			margin-left: 0px;
+		}
+	}
 
 	&_green {
 		color: #fff;
@@ -21,55 +41,63 @@
 	}
 
 	&_border-white {
-		border: 1px solid #fff;
+		border: 3px solid #fff;
 	}
 
 	&_small {
 		font-size: 18px;
-		font-family: 'PTSans-Regular';
+		font-family: 'Open Sans Bold';
 		padding: @sp/3 10px;
 	}
 
 	&_orange {
-		border: 1px solid @orange;
+		border: 3px solid @orange;
 		color: @orange;
-		font-size: 18px;
-		font-family: 'PTSans-Regular';
-		padding: @sp/3 10px;		
+		font-family: 'Open Sans Bold';
+
+	
+		&_fill {
+			color: #fff;
+			background-color: @orange;
+			border: 1px solid #ccc;
+		}		
 	}
 
-	& img {
-		position: absolute;
-		top: 50%;
-		transform: translate(0 , -50%);
-		width: 45px;
-	}
-
-	&__img-left {
-		& img {
-			left: @sp;
-		}
-	}
-
-	&__img-right {
-		& img {
-			right: @sp*2;
-		}
-	}
-
-	&__img-width-80 {
-		& img {
-			right: @sp;
-			width: 80px;
-		}
+	&__img {
+		position: relative;
+		top: 2px;
+		margin-right:10px;
 	}
 
 	&_main-menu {
 		float: right;
-		width: 200px;
-		background-image: url(../img/home.png);
-		background-repeat: no-repeat;
-		background-position: @sp @sp/3;
+		width: 245px;
+	}
+
+	&_back {
+		float: left;
+		width: 245px;
+	}
+
+	&_title {
+		width: 100%;
+		height: 90px;
+		text-align: left;
+		font-size: 36px;
+		font-family: 'Open Sans Extrabold';
+		
+		&__img {
+			display: inline-block;
+			width: 75px;
+			height:0;
+			line-height:2.6;
+			margin-left:@sp;
+		}
+
+		&__text {
+			position: relative;
+			top:-10px;
+		}
 	}
 }
 

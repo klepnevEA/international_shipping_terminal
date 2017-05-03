@@ -1,17 +1,43 @@
 .container
-	.container__main
-		.container__wrap-min
-			.history-ticket__wrap
-				.history-ticket__logo
-					img(src="img/elpasslogo.svg").history-ticket__img
-				.history-ticket__text АВТОБУСНЫЕ ПЕРЕВОЗКИ 
-					span «ЭЛПАСС»
-			a.btn.btn_green.btn__img-left(href="#") Покупка билета
-				img(src="img/bus.png")
-			a.btn.btn__img-left(href="#") печать билета
-				img(src="img/paper.png")
-			a.btn.btn__img-left(href="#") присоединение к элпасс
-				img(src="img/ticket.png")
-			a.btn.btn__img-left(href="#") пополнить баланс
-				img(src="img/wallet.png")
+	.bg-main
+		.bg-main__road
+			.bg-main__road_left
+			.bg-main__road_bottom
+	.row
+		.col-xs-12
+			.history-ticket__logo
+				img(src="img/svg/elpasslogo.svg").history-ticket__img
+			.language 
+				.language__text Выберите язык интерфейса
+				.language__buttons
+					a.btn.btn_green(href="#") рус 
+					a.btn(href="#") eng
+	.row
+		.col-xs-12
+			h1.title АВТОБУСНЫЕ ПЕРЕВОЗКИ 
+				span «ЭЛПАСС»
+	.row
+		.col-xs-2
+		.col-xs-8
+			a.btn.btn_title.btn_orange.btn_orange_fill.btn__img-left(href="#")
+				span.btn_title__img 
+					img(src="img/svg/bus.svg")
+				span.btn_title__text Покупка билета
+				
+			a.btn.btn_title.btn_orange.btn_orange_fill(href="#") 
+				span.btn_title__img 
+					img(src="img/svg/printer.svg")
+				span.btn_title__text печать билета
+				
+			a.btn.btn_title.btn_orange.btn_orange_fill(href="#") 
+				span.btn_title__img 
+					img(src="img/svg/card.svg")
+				span.btn_title__text присоединение к элпасс
+			a.btn.btn_title.btn_orange.btn_orange_fill(href="#") 
+				span.btn_title__img 
+					img(src="img/svg/wallet.svg")
+				span.btn_title__text пополнить баланс
+
+		.col-xs-2
+
 

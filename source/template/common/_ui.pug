@@ -3,10 +3,10 @@
 		p заглловки
 
 		h1.title заголовок 
-			span жирный
+			
 
 		h1.title.title_orange заголовок 
-			span жирный
+			
 
 		p кнопки
 
@@ -20,14 +20,45 @@
 		br
 		a.btn.btn_orange(href="#") оранжевая кнопка
 		br
-
+		a.btn.btn_orange_fill(href="#") оранжевая закрашенная кнопка
+		br
 
 		p инпуты
 		.input__wrap
-			input.input__elem(type="text", placeholder="введите текст")
-			.input__text текст
+			input.input__elem(type="text", placeholder="")
+			.input__text введите текст
 
-		p  текст
+		.input__wrap
+			input.input__elem(type="text", placeholder="")
+			.input__text введите текст
+			.input__comment Автостанция «Центральная»,  М. «Щелковская»
+			.input__hint
+					ul.input__hint__list
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия
+						li.input__hint__elem
+							a(href="#").input__hint__link
+								.input__hint__name Ярославль
+								.input__hint__text г. Ярославль, Ярославская область, Россия							
+		p текст
 		.text
 			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsam beatae odit veniam unde dolorem vitae debitis quasi, natus similique alias ducimus id ipsa labore provident inventore saepe eveniet neque.
 
@@ -37,3 +68,6 @@
 		p чекбокс 
 		input#checkbox.checkbox(type='checkbox')
 		label(for='checkbox') 
+
+		p календарь
+		#datepicker.datepicker-wrap

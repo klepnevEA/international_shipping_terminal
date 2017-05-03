@@ -2,29 +2,127 @@
 
 
 	&__wrap {
-	display: inline-block;
-	position: relative;
-	border-radius: @sp/3;
-	margin-bottom: @sp/3;
-	border: 1px solid @green;
-	padding: 25px 10px 5px;
-	background-color: #fff;
-	font-family: 'PTSans-Regular';
-	font-size: 24px;
-	text-align: center;
-	text-align: left;
+		display: inline-block;
+		position: relative;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		padding:25px @sp 25px 80px ;
+		background-color: #fff;
+		font-family: 'Open Sans Semibold';
+		width: 100%;
+		font-size: 38px;
+		text-align: center;
+		text-align: left;
+
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #FFF;
+			border-radius: 10px;
+			background-image: url(../img/svg/marck.svg);
+			background-repeat: no-repeat;
+			background-position: 20px 25px;
+			border: 3px solid @gray;
+			z-index: 20;
+		}
+		
+		&.active {
+			& .input__text {
+				font-size: 16px;
+				top: 5px;
+	    		left: 80px;
+			}
+		}
 	}
 
 	&__elem {
+		position: relative;
+		z-index:100;
 		border: 0px;
 		outline: none;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0);
 	}
 
 	&__text {
 		position: absolute;
-		top: 3px;
-		left: 10px;
+		transition: .3s;
+		z-index:50;
+	    top: 25px;
+	    left: 80px;
 		color: @gray;
+		font-size: 38px;
+	}
+
+	&__comment {
+		position: absolute;
+		font-size: 20px;
+	    bottom: @sp/3;
+	    left: 80px;	
+	    z-index:25;
+	    font-family: 'Open Sans';		
+	}
+
+	&__hint {
+		position: absolute;
+		width: 100.5%;
+		height: 0;
+		top: @sp;
+		left: 0;
+		border:3px solid @gray;
+		box-sizing: border-box;
+		background-color: #FFF;
+		border-radius: 10px;
+		padding: 75px 10px 0;
+		transition: .3s;
+		overflow: hidden;
+		z-index:10;
+		
+		&.active {
+			height: 340px;
+		}
+
+		&__list {
+			margin-top: 25px;
+		}
+		
+		&__elem {
+			display: inline-block;
+			width: 32.7%;
+			background-color: @green;
+			border-radius: 10px;
+			padding: 10px 25px;
+			margin-bottom: 10px;
+			color: #fff;
+			
+			// &:hover {
+			//   background-color: @green_dark;
+			//   box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+ 		// 	}
+
+		}
+
+		&__link {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		&__name {
+			font-family: 'Open Sans Bold';
+			font-size: 30px;
+		}
+
+		&__text {
+			font-family: 'Open Sans';
+			font-size: 16px;
+		}
+
+
 	}
 
 }
