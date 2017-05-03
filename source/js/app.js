@@ -29,5 +29,9 @@ $(document).ready(function() {
 		$(this).parent().children('.input__hint').removeClass('active');
 
 	});
+
+	$('.table-condensed thead').append('<div class="table-condensed_back"></div>');
 });
+
+
 

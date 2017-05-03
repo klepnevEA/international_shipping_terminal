@@ -11,7 +11,6 @@
 		font-family: 'Open Sans Semibold';
 		width: 100%;
 		font-size: 38px;
-		text-align: center;
 		text-align: left;
 
 		
@@ -27,14 +26,14 @@
 			background-image: url(../img/svg/marck.svg);
 			background-repeat: no-repeat;
 			background-position: 20px 25px;
-			border: 3px solid @gray;
+			border: 3px solid @gray_light;
 			z-index: 20;
 		}
 		
 		&.active {
 			& .input__text {
 				font-size: 16px;
-				top: 5px;
+				top: 10px;
 	    		left: 80px;
 			}
 		}
@@ -57,6 +56,7 @@
 	    left: 80px;
 		color: @gray;
 		font-size: 38px;
+		text-transform: uppercase;
 	}
 
 	&__comment {
@@ -74,7 +74,7 @@
 		height: 0;
 		top: @sp;
 		left: 0;
-		border:3px solid @gray;
+		border:3px solid @gray_light;
 		box-sizing: border-box;
 		background-color: #FFF;
 		border-radius: 10px;
