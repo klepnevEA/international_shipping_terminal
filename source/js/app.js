@@ -20,6 +20,8 @@ $(document).ready(function() {
 
 	$('.input__elem').on('input', function() {
 		$(this).parent().children('.input__hint').addClass('active');
+		$(this).parent().addClass('index');
+
 	})
 
 	$('.input__elem').on('blur', function() {
@@ -27,10 +29,24 @@ $(document).ready(function() {
 			$(this).parent().removeClass('active');
 		}
 		$(this).parent().children('.input__hint').removeClass('active');
-
+		$(this).parent().removeClass('index');
 	});
 
 	$('.table-condensed thead').append('<div class="table-condensed_back"></div>');
+
+
+
+	/*рабочее меню*/ 
+	
+	var menuAct;
+	$('.menu-nav').mouseover( function(){
+		$('.menu-nav').addClass('active');
+	});
+
+	$('.menu-nav').mouseleave( function(){
+		$('.menu-nav').removeClass('active');
+	});
+
 });
 
 

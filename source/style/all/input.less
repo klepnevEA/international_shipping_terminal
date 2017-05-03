@@ -13,6 +13,7 @@
 		font-size: 38px;
 		text-align: left;
 
+
 		
 		&:after {
 			content: '';
@@ -29,8 +30,13 @@
 			border: 3px solid @gray_light;
 			z-index: 20;
 		}
+
+		&.index {
+			z-index:1000;
+		}
 		
 		&.active {
+			
 			& .input__text {
 				font-size: 16px;
 				top: 10px;
