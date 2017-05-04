@@ -57,7 +57,30 @@ $(document).ready(function() {
 
 	$('#checkbox').on('click', function () {
 		$('.slider__block_transfer').toggleClass('active');
+	});
+
+
+	/*счетчик*/
+
+	$('.counter__box button').on('click', function() {
+		var that = $(this),
+			count = that.data('counter'),
+			input = that.parent().find('.counter__input'),
+			input_val = input.val();
+
+		if(count == 'plus') {
+
+			input_val = input_val*1 + 1;
+		} else if(count == 'min') {
+			input_val = input_val*1 - 1;
+			if(input_val <= 0) {
+				input_val = 0;
+			}
+		}
+		input.val(input_val);
+
 	})
+
 });
 
 
