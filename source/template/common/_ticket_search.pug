@@ -14,13 +14,18 @@
 					
 
 .container
-	.row
+	.row.row_bottom-border
 		.col-xs-5
 			input#checkbox.checkbox(type='checkbox')
 			label(for='checkbox') Без пересадок
 		.col-xs-7
 			.search-filter
 				a(href="#").search-filter__link По цене
+				.search-filter__input
+					input.search-filter__elem(type="text")
+				a(href="#").search-filter__link В пути
+
+				<i class="mdi mdi-map-marker"></i>
 	.row
 		.col-xs-12.content-center
 
