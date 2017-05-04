@@ -48,11 +48,16 @@ $(document).ready(function() {
 	});
 
 	/*сладжер*/
-	$(".news-block__slide").slick({
+	$(".slider__wrap").slick({
 	    dots: false,
 	    arrows: true
 	});
 
+	/*с пересадкой / без пересадки*/
+
+	$('#checkbox').on('click', function () {
+		$('.slider__block_transfer').toggleClass('active');
+	})
 });
 
 
