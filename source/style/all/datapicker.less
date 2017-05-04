@@ -101,6 +101,8 @@
 			background-position: center center;
 			z-index:100;
 			
+
+			
 			&:hover {
 				background-color: transparent;
 			}
@@ -110,10 +112,17 @@
 		& .prev {
 			position: relative;
 			left: 105px;
-			background-image: url(../img/svg/arrow_orange_left.svg);
-			background-repeat: no-repeat;
-			background-position: center center;
 			z-index:100;
+			
+			&:after {
+				content:'\f04e';
+				position: absolute;
+			    top: -5px;
+			    left: 20px;
+				font-size: 60px;
+				color: @orange;
+				font-family: "Material Design Icons";
+			} 
 			&:hover {
 				background-color: transparent;
 			}

@@ -16,19 +16,21 @@
 
 		
 		&:after {
-			content: '';
+			content: "\f34e";
 			position: absolute;
+			padding: @sp @sp/3;
+			font-size: 65px;
+			color: @green;
+			box-sizing: border-box;
 			top: 0;
 			left: 0;
-			width: 100%;
+			width: 100.5%;
 			height: 100%;
 			background-color: #FFF;
 			border-radius: 10px;
-			background-image: url(../img/svg/marck.svg);
-			background-repeat: no-repeat;
-			background-position: 20px 25px;
 			border: 3px solid @gray_light;
 			z-index: 20;
+			font-family: "Material Design Icons";
 		}
 
 		&.index {
