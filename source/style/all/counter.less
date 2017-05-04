@@ -1,0 +1,84 @@
+.counter {
+	height: 170px;
+	text-align: center;
+	padding: 25px 0 25px 0px;
+	&__title {
+		font-size: 38px;
+		font-family: "Open Sans";
+		color: rgb(172, 172, 172);
+		font-family: 'Open Sans Bold';
+		line-height: 1;
+	}
+	&__box {
+		margin-top: 15px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		.clearfix;
+	}
+	&__plus, &__minus {
+		width: 72px;
+		height: 72px;
+		background: @green;
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(85, 138, 50);
+		border-radius: 10px;
+		background-color: rgb(115, 181, 72);
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		&:before {
+			content: "\F415";
+			font-size: 65px;
+			color: white;
+			font-family: "Material Design Icons";
+			position: absolute;
+			top: -3px;
+			left: 1px;
+		}
+		
+		&:hover {
+			box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+		}
+	}
+	&__minus {
+		&:before {
+			content: "\F374";
+
+		} 
+	}
+	
+	&__input {
+		display: inline-block;
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(201, 205, 218);
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		width: 145px;
+		margin: 0 10px;
+		outline: none;
+		font-size: 48px;
+		font-family: 'Open Sans Bold';
+		color: black;
+		line-height: 1;
+		padding-left: 75px;
+		padding-right: 10px;
+		text-align: center;
+		&-wrap {
+			position: relative;
+			&:before {
+				content: "\F481";
+				font-size: 50px;
+				color: #acacac;
+				font-family: "Material Design Icons";
+				position: absolute;
+				top: 10px;
+				left: 33px;
+				z-index: 10;
+			}
+		}
+	}
+}
