@@ -47,6 +47,12 @@ $(document).ready(function() {
 		$('.menu-nav').removeClass('active');
 	});
 
+	/*сладжер*/
+	$(".news-block__slide").slick({
+	    dots: false,
+	    arrows: true
+	});
+
 });
 
 
