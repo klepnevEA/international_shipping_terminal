@@ -3,7 +3,7 @@
 	&  table tr td.active.active {
 		border: 3px solid @green;
 		color: #fff;
-		padding: 0 20px 10px !important;
+		padding: 0 20px 14px !important;
 		background-color: @green !important;
 		background-image: linear-gradient(to bottom,  @green,  @green);
 	
@@ -43,7 +43,7 @@
 		z-index:100;
 		border: 3px solid #fff;
 		font-size: 44px;
-		padding: 5px 20px !important;
+		padding: 7px 21.5px !important;
 		background-color: #FFF;
 		color: @gray;
 		background-image: url(../img/svg/cross.svg);
@@ -54,6 +54,11 @@
 		
 		&:hover {
 			border: 3px solid #eee;
+		}
+
+		&.old,&.new {
+			background-color: #e9eaf2;
+			border:3px solid #e9eaf2;
 		}
 	}
 
@@ -80,8 +85,8 @@
 		&_back {
 			position: absolute;
 		    width: 100%;
-		    height: 89%;
-			top: 70px;
+		    height: 86%;
+			top: 90px;
 			left: 0;
 			background-color: #bfc3d1;
 			border-radius: 10px;
@@ -90,10 +95,11 @@
 
 		& .next {
 			position: relative;
-			right: 125px;
-			background-image: url(../img/svg/arrow_irange_right.svg);
+			right: 105px;
+			background-image: url(../img/svg/arrow_orange_right.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
+			z-index:100;
 			
 			&:hover {
 				background-color: transparent;
@@ -103,16 +109,21 @@
 
 		& .prev {
 			position: relative;
-			left: 125px;
-			background-image: url(../img/svg/arrow_irange_left.svg);
+			left: 105px;
+			background-image: url(../img/svg/arrow_orange_left.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
+			z-index:100;
 			&:hover {
 				background-color: transparent;
 			}
 		}
 
 		& .datepicker-switch {
+			position: relative;
+			top: -6px;
+			font-size: 40px;
+			font-family: 'Open Sans Bold';
 			&:hover {
 				background-color: transparent;
 			}

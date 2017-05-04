@@ -7,7 +7,7 @@
 	border-radius: @sp/3;
 	margin-bottom: 10px;
 	border: 3px solid @green;
-	padding: 10px 25px;
+	padding: 7px 25px;
 	background-color: #fff;
 	font-family: 'Open Sans Bold';
 	font-size: 28px;
@@ -19,24 +19,38 @@
 		box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
 	}
 
+	&:active {
+		background-color: #ccc;
+	}
+
 
 	&_find {
 		width: 305px;
 		
 		& .btn_title__img {
-			position: relative;
-    		top: 5px;
-			margin-left: 0px;
+			margin-left: -18px;
+			
+			& img {
+				width: 32px;
+			}
 		}
 	}
 
 	&_green {
 		color: #fff;
-		background-color: @green; 
+		background-color: @green;
+		
+		&:active {
+			background-color: @green_dark;
+		} 
 	}
 
 	&_border-white {
 		border: 3px solid #fff;
+	}
+
+	&_border-green-dark {
+		border: 3px solid @green_dark;
 	}
 
 	&_small {
@@ -56,6 +70,10 @@
 			color: #fff;
 			background-color: @orange;
 			border: 1px solid #ccc;
+			
+			&:active {
+				background-color: @orange_dark;
+			}
 		}		
 	}
 
@@ -81,25 +99,50 @@
 		text-align: left;
 		font-size: 36px;
 		font-family: 'Open Sans Extrabold';
+		margin-bottom:0;
 		
 		&__img {
 			display: inline-block;
 			width: 75px;
 			height:0;
-			line-height:2.6;
-			margin-left:@sp;
+			line-height:2.7;
+			margin-left:25px;
 		}
 
 		&__text {
 			position: relative;
-			top:-10px;
+			top: -12px;
 		}
 	}
 
 	&_go-next {
 		width: 365px;
-		margin-top:150px;
+	    margin-top: 160px;
+	    padding: 15px 25px;
 
+	}
+
+	&_arrows {
+		float: right;
+		width: 80px;
+		height: 80px;
+		margin-top: 20px;
+		background-image: url(../img/svg/arrows.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&_arrows-circle {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		top: 75px;
+		right: @sp*2;
+		z-index:100;
+		background-image: url(../img/svg/arrows.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		z-index:2000;
 	}
 }
 

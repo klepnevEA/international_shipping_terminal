@@ -1,12 +1,12 @@
 .passengers {
-	padding-top:@sp*3;
+	padding-top:35px;
 	.clearfix;
 	&__text {
 		display: inline-block;
 		float:left;
 		font-family: 'Open Sans Bold';
 		font-size: 38px;
-		margin-right:70px;
+		margin-right:25px;
 		line-height: 1.7;
 	}
 
@@ -53,8 +53,11 @@
 		}
 		
 		&:hover {
-			background-color: @green_dark;
 			box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+		}
+
+		&:active {
+			background-color: @green_dark;
 		}
 	}
 }

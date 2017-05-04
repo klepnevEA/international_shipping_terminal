@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="37.25" height="48" viewBox="0 0 37.25 48">
+<svg id="сменить_направления" data-name="сменить направления" xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 77 77">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -30,10 +30,18 @@
 <defs>
     <style>
       .cls-1 {
+        fill: #73b548;
+        stroke: #558a32;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
         fill: #fff;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <path id="иконка" class="cls-1" d="M1171.5,227.5h8V208.75h5.25V227.5h8l-10.63,10.625Zm-2.75-26.75V219.5h-5.25V200.75h-8l10.62-10.625,10.63,10.625h-8Z" transform="translate(-1155.5 -190.125)"/>
+  <circle id="кнопка" class="cls-1" cx="38.5" cy="38.5" r="35"/>
+  <path id="иконка" class="cls-2" d="M1156.5,391.5h8V372.75h5.25V391.5h8l-10.63,10.625Zm-2.75-26.75V383.5h-5.25V364.75h-8l10.62-10.625,10.63,10.625h-8Z" transform="translate(-1121.5 -339.5)"/>
 </svg>
