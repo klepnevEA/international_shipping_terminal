@@ -1,0 +1,65 @@
+	.legend {
+		display: inline-block;
+		margin-bottom: 50px;
+		width: 78.3%;
+		
+		&__wrap {
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+		}
+
+		&__element {
+			display: flex;
+			align-items: center;
+		}
+
+		&__icon {
+			position: relative;
+			padding: 0;
+			margin: 0 15px 0 0;
+			width: 40px;
+			height: 35px;
+			box-sizing: border-box;
+			border: 3px solid @gray_light;
+			border-radius: 5px;
+			
+			
+			&:after {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: -10px;
+				height: 35px;
+				width: 10px;
+				border-radius: 5px;
+				background-color: @gray_light;
+				
+			}
+
+			&_free {
+				border-color: @green_dark;
+				background-color: @green;
+				
+				&:after {
+					background-color: @green_dark;
+				}
+			}
+
+			&_chosen {
+				border-color: @orange_dark;
+				background-color: @orange;
+				
+				&:after {
+					background-color: @orange_dark;
+				}
+			}	
+		}
+
+		&__text {
+			font-family: 'Open Sans';
+			font-size: 22px;
+			
+		}
+
+	}

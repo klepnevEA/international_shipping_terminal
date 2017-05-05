@@ -17,22 +17,31 @@
 	
 	&:hover {
 		box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+		border: 0px solid @green;
+		padding: 10px 28px;
 	}
 
 	&:active {
 		background-color: #ccc;
+		border: 0px solid @green;
+		padding: 10px 28px;
 	}
 
 
 	&_find {
 		width: 305px;
+		padding: 7px 28px 14px;
+		line-height: 1;
 		
-		& .btn_title__img {
-			margin-left: -18px;
+		&:hover {
+			padding: 7px 28px 14px;
+		}
+		
+		& i {
+			position: relative;
+			top: 5px;
+			font-size: 45px;
 			
-			& img {
-				width: 32px;
-			}
 		}
 	}
 
@@ -60,16 +69,24 @@
 	}
 
 	&_orange {
-		border: 3px solid @orange;
+		border: 0px solid @orange;
 		color: @orange;
 		font-family: 'Open Sans Bold';
+		
+		&:hover {
+			padding: 7px 25px;
+		}
 
 	
 		&_fill {
 			margin-top: 10px;
 			color: #fff;
 			background-color: @orange;
-			border: 1px solid #ccc;
+			border: 0px solid #ccc;
+			
+			&:hover {
+				padding: 7px 25px;
+			}
 			
 			&:active {
 				background-color: @orange_dark;
@@ -84,6 +101,10 @@
 		&-big {
 			padding: 16px 45px;
 			border: none;
+			
+			&:hover {
+				padding: 16px 45px;
+			}
 		}
 	}
 
@@ -135,6 +156,14 @@
 		width: 365px;
 	    margin-top: 160px;
 	    padding: 15px 25px;
+	    
+		&:hover {
+			padding: 15px 25px;
+		}
+
+		&:active {
+			padding: 15px 25px;
+		}
 
 	}
 
@@ -159,6 +188,19 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		z-index:2000;
+	}
+
+	&_order-pay {
+		width: 685px;
+		padding: @sp 25px;
+		
+		&:hover {
+			padding: @sp 25px;			
+		}
+	}
+
+	&_float-right {
+		float: right;
 	}
 }
 

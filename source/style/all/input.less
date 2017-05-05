@@ -12,6 +12,8 @@
 		width: 100%;
 		font-size: 38px;
 		text-align: left;
+		
+
 
 
 		
@@ -44,6 +46,26 @@
 				top: 10px;
 	    		left: 80px;
 			}
+		}
+
+		&_plain {
+			padding:27px @sp;
+			
+			&:after {
+				content: '';
+			}
+
+			& .input__text {
+				left: @sp;
+			}
+
+			&.active {
+				& .input__text {
+					font-size: 16px;
+					top: 10px;
+		    		left: 20px;
+				}				
+			}			
 		}
 	}
 
@@ -136,6 +158,39 @@
 
 
 	}
+
+	&__btn-block {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		width: 215px;
+		height: 70px;
+		z-index: 100;
+		
+		&__sex {
+			float: left;
+			width: 100px;
+			margin-right: 5px;
+			height: 100%;
+			box-sizing: border-box;
+			border: 3px solid @gray;
+			border-radius: 10px;
+			background-color: @gray_light;
+			text-align: center;
+			color: #000;
+			font-family: 'Open Sans Bold';
+			font-size: 38px;
+			text-decoration: none;
+			line-height: 1.6;
+			
+			&.active {
+				border: 3px solid @green_dark;
+				background-color: @green;
+				color: #fff;
+				
+			}
+		}
+	} 
 
 }
 

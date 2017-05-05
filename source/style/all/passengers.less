@@ -52,16 +52,26 @@
 		line-height:0;
 		padding-top:32px;
 		
-		&-minus {
-			padding-top:28px;			
-		}
+
 		
 		&:hover {
 			box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+			border: 0px solid @green_dark;
+			padding-top:35px;
 		}
 
 		&:active {
 			background-color: @green_dark;
+			border: 0px solid @green_dark;
+		}
+
+
+		&-minus {
+			padding-top:26px;	
+			
+			&:hover {
+				padding-top:29px;
+			}				
 		}
 	}
 }

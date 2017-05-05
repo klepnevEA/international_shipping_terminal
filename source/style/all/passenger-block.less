@@ -1,0 +1,46 @@
+.passenger-block {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 25px;
+
+	
+	&__elem {
+		position: relative;
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 25px 10px;
+		border: 3px;
+		border-color: @gray_light;
+		border-style: solid;
+		border-radius: 10px;
+		background-color: #e9eaf2;
+
+		&.active {
+			background-color: #fff;
+			
+			&:after {
+				content: '';
+				position: absolute;
+			    width: 101.3%;
+			    height: 10px;
+			    left: -3px;
+			    bottom: -3px;
+				background-color: @orange;
+		        border-radius: 0 0 10px 10px;
+			}
+		}
+	}
+
+
+
+	&__text {
+		font-family: 'Open Sans Bold';
+		font-size: 28px; 
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+
+}

@@ -1,0 +1,59 @@
+.container
+	.row
+		.col-xs-12
+			//- .select-route
+			//- 	.select-route__block.active
+			//- 		.select-route__way Москва
+			//- 		.select-route__way Екатеренбург
+			//- 		.select-route__date 15 мая 2017 14:30
+			//- 		.select-route__places Выбраны места:
+			//- 			span 22
+			//- 	.select-route__block
+			//- 		.select-route__way Москва
+			//- 		.select-route__way Екатеренбург
+			//- 		.select-route__date 15 мая 2017 14:30
+			//- 		.select-route__places Места не выбраны
+
+			.passenger-block 
+				.passenger-block__elem.active
+					.passenger-block__text пасаажир 1 
+				.passenger-block__elem
+					.passenger-block__text пасаажир 2 
+
+	.row
+		.col-xs-12
+			.passenger-wrap
+				.row
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Фамилия
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Имя
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Отчество
+				.row
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Дата рождеия
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="", disabled)
+							.input__text Пол
+							.input__btn-block
+								a(href="#", data-sex = "Мужской").input__btn-block__sex.active М
+								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
+				.row
+					.col-xs-6
+					.col-xs-6
+				.row
+					.col-xs-6
+					.col-xs-6
+	.row
+		.col-xs-12.content-center
+			a.btn.btn_orange_fill.btn_order-pay(href="#") ПОСМОТРЕТЬ ЗАКАЗ И ОПЛАТИТЬ
