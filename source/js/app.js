@@ -100,6 +100,13 @@ $(document).ready(function() {
 			console.log(thatParent.val());
 	});
 
+	// Табы Пасажиров
+	$(document).ready(function(){ 
+	  $("#passTab a").click(function(e){
+	    e.preventDefault();
+	    $(this).tab('show'); 
+	  });
+	});
 
 	/*новый календарь*/
 
@@ -153,6 +160,7 @@ $(document).ready(function() {
 
 
 });
+
 
 
 

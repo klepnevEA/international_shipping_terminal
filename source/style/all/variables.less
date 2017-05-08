@@ -11,3 +11,14 @@
 @gray_light: #c9cdda;
 @blue: #17355D;
 @ellow: #eada00;
+
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
