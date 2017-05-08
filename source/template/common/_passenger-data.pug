@@ -1,25 +1,15 @@
 .container
 	.row
 		.col-xs-12
-			//- .select-route
-			//- 	.select-route__block.active
-			//- 		.select-route__way Москва
-			//- 		.select-route__way Екатеренбург
-			//- 		.select-route__date 15 мая 2017 14:30
-			//- 		.select-route__places Выбраны места:
-			//- 			span 22
-			//- 	.select-route__block
-			//- 		.select-route__way Москва
-			//- 		.select-route__way Екатеренбург
-			//- 		.select-route__date 15 мая 2017 14:30
-			//- 		.select-route__places Места не выбраны
-
 			.passenger-block 
 				.passenger-block__elem.active
 					.passenger-block__text пасажир 1 
 				.passenger-block__elem
 					.passenger-block__text пасажир 2 
-
+				.passenger-block__elem
+					.passenger-block__text пасажир 3 
+				.passenger-block__elem
+					.passenger-block__text пасажир 4 
 	.row
 		.col-xs-12
 			.passenger-wrap
@@ -39,7 +29,7 @@
 				.row
 					.col-xs-6
 						.input__wrap.input__wrap_plain
-							input.input__elem(type="text", placeholder="")
+							input.input__elem#birthday(type="text", placeholder="")
 							.input__text Дата рождеия
 					.col-xs-6
 						.input__wrap.input__wrap_plain
@@ -50,16 +40,16 @@
 								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
 				.row
 					.col-xs-6
-						.input__wrap.input__wrap_plain
-							input.input__elem(type="text", placeholder="")
+						.input__wrap.input__arrow-down.input__wrap_plain.popup_open(data-popup="popup_1")
+							input.input__elem#document(type="text", placeholder="")
 							.input__text вид документа					
 					.col-xs-6
 						.input__wrap.input__wrap_plain
-							input.input__elem(type="text", placeholder="")
+							input.input__elem#series_number(type="text", placeholder="")
 							.input__text серия и номер											
 				.row
 					.col-xs-6
-						.input__wrap.input__wrap_plain.active
+						.input__wrap.input__arrow-down.input__wrap_plain.active
 							select.input__elem.selectpicker(data-size="3")
 
 								option(value='1') Россия
@@ -71,7 +61,7 @@
 							.input__text гражданство	
 					.col-xs-6
 						.input__wrap.input__wrap_plain
-							input.input__elem(type="text", placeholder="")
+							input.input__elem#phone_number(type="text", placeholder="")
 							.input__text мобильный телефон
 
 	.row
@@ -91,3 +81,21 @@
 	.row
 		.col-xs-12.content-center
 			a.btn.btn_orange_fill.btn_order-pay(href="#") ПОСМОТРЕТЬ ЗАКАЗ И ОПЛАТИТЬ
+
+
+	.popup.popup_close#popup_1 
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title Вид документа
+					.popup__body
+							ul.document-list
+								li.document-list__item.popup_close
+									a(href='#doc1') Паспорт
+								li.document-list__item.popup_close
+									a(href='#doc2') Заграничный паспорт
+								li.document-list__item.popup_close
+									a(href='#doc3') Военный билет
+								li.document-list__item.popup_close
+									a(href='#doc4') Свидетельсто о рождении
+								li.document-list__item.popup_close
+									a(href='#doc5') Иностранный паспорт

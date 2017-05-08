@@ -14,8 +14,6 @@
 		text-align: left;
 		
 
-
-
 		
 		&:after {
 			content: "\f34e";
@@ -192,6 +190,20 @@
 			}
 		}
 	} 
+
+	&__arrow-down {
+		&:before {
+			content:'\f140';
+			font-family: "Material Design Icons";
+			position: absolute;
+		    right: 10px;
+		    top: 45px;
+		    z-index: 100;
+		    font-size: 70px;
+		    line-height: 0;
+		    color: @gray;
+		}
+	}
 
 }
 
