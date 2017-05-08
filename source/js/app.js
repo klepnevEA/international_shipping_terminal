@@ -94,10 +94,10 @@ $(document).ready(function() {
 	$('.input__btn-block__sex').on('click', function() {
 		var that = $(this),
 			thatVal = that.data('sex'),
-			thatParent = that.closest('.input__wrap').find('input__elem');
-			
-			thatParent.val(thatVal);
-			console.log(thatParent.val());
+			thatParent = that.closest('.input__wrap'),
+			thatInput = thatParent.find('.input__elem');
+			thatInput.val(thatVal);
+			thatParent.addClass('active');
 	});
 
 	// Табы Пасажиров

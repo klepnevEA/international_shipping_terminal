@@ -50,10 +50,44 @@
 								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
 				.row
 					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text вид документа					
 					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text серия и номер											
 				.row
 					.col-xs-6
+						.input__wrap.input__wrap_plain.active
+							select.input__elem.selectpicker(data-size="3")
+
+								option(value='1') Россия
+								option(value='2') Украина
+								option(value='3') Беларусь
+								option(value='4') Литва
+								option(value='5') США
+								option(value='6') Гернания 
+							.input__text гражданство	
 					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text мобильный телефон
+
+	.row
+		.col-xs-12
+			.card_marker
+				img.card_marker__img(src="../img/img_card_marker.png")
+
+				.card_marker__checkbox
+					input#checkbox.checkbox(type='checkbox')
+					label(for='checkbox') 
+
+				.card_marker__text Выдать карту «ЭЛПАСС»
+					span С картой ЭЛПАСС можно пользоваться городскими, пригородными и междугородными автобусами
+
+
+
 	.row
 		.col-xs-12.content-center
 			a.btn.btn_orange_fill.btn_order-pay(href="#") ПОСМОТРЕТЬ ЗАКАЗ И ОПЛАТИТЬ

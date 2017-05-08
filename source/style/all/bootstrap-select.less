@@ -1,0 +1,141 @@
+.bootstrap-select {
+	&:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: 100%;
+	}
+
+	& .btn {
+		position: relative;
+		border:0;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+        color: #000;
+        outline: 0;
+        height: 0;
+        margin-bottom: 0;
+        
+        &:hover {
+        	box-shadow: none;
+        }
+
+        &:focus {
+        	outline: 0!important;
+        }
+	}
+
+	& .filter-option {
+		display: inline-block;
+		outline: 0;
+		height: 45px;
+		line-height: 2.2;
+        &:focus {
+        	outline: 0;
+        }
+	}
+
+	&.btn-group {
+		position: absolute;
+		height: 60px;
+
+	}
+
+	& .selected {
+		width: 99%;
+	}
+
+	& .caret {
+		top: 22px  !important;
+    	right: 43px  !important;
+	}
+
+	& ::-webkit-scrollbar-button {
+		display: inline-block;
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:5px;
+		height:0px
+	}
+
+	& ::-webkit-scrollbar-track {
+		display: inline-block;
+		position: relative;
+		right: 5px;
+		
+		background-color:transparent;
+	}
+
+	& ::-webkit-scrollbar-thumb {
+		display: inline-block;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color:@gray;
+		margin: 5px;
+		
+	}
+
+	& ::-webkit-resizer{
+		display: inline-block;
+		background-image:url('');
+		background-repeat:no-repeat;
+		width:10px;
+		height:0px
+	}
+
+	& ::-webkit-scrollbar{
+		display: inline-block;
+		padding-right: 10px;
+		width: 30px;
+		height: 50px;
+	}
+}
+
+
+
+.dropdown-menu {
+	position: absolute;
+	padding: 0;
+	left: -@sp;
+	border-radius: 10px;
+	width: 100.5%;
+	border: 3px solid @gray_light;
+	padding: 3px 5px 5px 3px;
+	
+	& li {
+		color: #000;
+		padding: 5px !important;
+		border-radius: 10px !important;
+		
+		&:hover {
+			background-color: transparent;
+			
+	        & a {
+	 			background-color: transparent;       	
+	        }
+		}
+	}
+
+	& .text {
+		color: #000;
+	}
+	
+
+	& .selected {
+		background-color: @green !important;
+        border-radius: 10px;
+        
+        & a {
+ 			background-color: @green !important; 
+ 			outline: none;      	
+        }
+        
+		
+		&:hover {
+			background-color: @green !important;
+			
+	        & a {
+	 			background-color: @green !important;       	
+	        }						
+		}
+	}
+}
+

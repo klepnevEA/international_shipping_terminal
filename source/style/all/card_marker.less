@@ -1,0 +1,29 @@
+.card_marker {
+	margin-bottom: @sp;
+	.clearfix;
+	&__img {
+		float: left;
+		width: 112px;
+		height: 66px;
+		margin-right: 10px;
+	}
+
+	&__checkbox {
+		float: left;
+		& input+label {
+			margin: 0 0 0;
+		}
+	}
+
+	&__text {
+		float: left;
+		font-family: 'Open Sans Bold';
+		font-size: 26px;
+		
+		& span {
+			display: block;
+			font-family: 'Open Sans';
+			font-size: 18px;
+		}
+	}
+}
