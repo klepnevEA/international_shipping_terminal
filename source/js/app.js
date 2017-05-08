@@ -2,13 +2,6 @@
 
 $(document).ready(function() {
 
-	// $('#datepicker').datepicker({
- //    	orientation: "auto center",
- //    	language: "ru",
-
- //    	maxViewMode: 0
-	// });
-
 	/*удаляем из календатря старые стрелки*/
 	$('.table-condensed .prev').html('');
 	$('.table-condensed .next').html('');
@@ -100,8 +93,11 @@ $(document).ready(function() {
 
 	$('.input__btn-block__sex').on('click', function() {
 		var that = $(this),
-			thatVal = that.data('sex');
-			console.log(thatVal);
+			thatVal = that.data('sex'),
+			thatParent = that.closest('.input__wrap').find('input__elem');
+			
+			thatParent.val(thatVal);
+			console.log(thatParent.val());
 	});
 
 
