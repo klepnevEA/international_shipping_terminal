@@ -1,0 +1,66 @@
+.container
+	.row
+		.col-xs-12
+			.passenger-block 
+				.passenger-block__elem.active
+					.passenger-block__text пасcажир 1 
+				.passenger-block__elem
+					.passenger-block__text пасcажир 2 
+
+	.row
+		.col-xs-12
+			.passenger-block-wrap
+				.passenger-block-info 
+					.tab-content
+						#pass1.tab-pane.active
+							.passenger-block-info__title Карта
+							.passenger-block-info__value 584923 
+							.passenger-block-info__title Фамилия Имя Отчество
+							.passenger-block-info__value Елена Владимировна Г. 
+							a.btn.btn_gray(href="#") заполнить в ручную 
+							
+						#pass2.tab-pane.fade
+							.passenger-block-info__title Карта
+							.passenger-block-info__value 584924 
+							.passenger-block-info__title Фамилия Имя Отчество
+							.passenger-block-info__value Владимир Николаевич О. 
+							a.btn.btn_gray(href="#") заполнить в ручную
+						#pass3.tab-pane.fade
+							.passenger-block-info__title Карта
+							.passenger-block-info__value 584925 
+							.passenger-block-info__title Фамилия Имя Отчество
+							.passenger-block-info__value Иван Петрович Г. 
+							a.btn.btn_gray(href="#") заполнить в ручную 
+						#pass4.tab-pane.fade
+							.passenger-block-info__title Карта
+							.passenger-block-info__value 584926 
+							.passenger-block-info__title Фамилия Имя Отчество
+							.passenger-block-info__value Алла Петровна Г. 
+							a.btn.btn_gray(href="#") заполнить в ручную
+						#pass5.tab-pane.fade
+							.passenger-block-info__title Карта
+							.passenger-block-info__value 584927 
+							.passenger-block-info__title Фамилия Имя Отчество
+							.passenger-block-info__value Петр Владиславович О. 
+							a.btn.btn_gray(href="#") заполнить в ручную 
+
+					
+
+				.passenger-block-list
+					.passenger-block-list__title Список пассажиров транспортной карты элпасс
+					ul#passTab
+						li.passenger-block-list__item.active
+							a(href='#pass1') Елена Владимировна Г.
+						li.passenger-block-list__item
+							a(href='#pass2') Владимир Николаевич О.
+						li.passenger-block-list__item
+							a(href='#pass3') Иван Петрович Г.
+						li.passenger-block-list__item
+							a(href='#pass4') Алла Петровна Г.
+						li.passenger-block-list__item
+							a(href='#pass5') Петр Владиславович О.
+
+
+	.row
+		.col-xs-12.content-center
+			a.btn.btn_orange_fill.btn_order-pay(href="#") ПОСМОТРЕТЬ ЗАКАЗ И ОПЛАТИТЬ 
