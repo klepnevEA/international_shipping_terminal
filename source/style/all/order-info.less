@@ -1,0 +1,65 @@
+.order-info {
+	width: 100%;
+	border: 3px solid @gray_light;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    &__head {
+    	text-align: center;
+    	padding: 13px;
+    	font-size: 32px;
+    	font-family: 'Open Sans Bold';
+    	text-transform: uppercase;
+    	background-color: #f1f2f7;
+    	border-bottom: 3px solid @gray_light;
+    }
+
+    &__body {
+    	background-color: #fff;
+    	padding: @sp 0  @sp 125px ;
+
+    }
+
+    &__table {
+    	font-family: 'Open Sans Bold';
+    	font-size: 28px;
+    	color: #000;
+    	
+    	& tr td:first-child {
+    		font-family: 'Open Sans Extrabold';
+    		color: @gray;
+    		font-size: 22px;
+    		text-transform: uppercase;
+    		width: 240px;
+    		text-align: right;
+    		padding-bottom: @sp/3;
+    	}
+
+    	& td {
+    		vertical-align: bottom;
+    		line-height:1.3;
+    		margin: 0;
+    		padding: 0;
+    		height: 45px;
+    		padding-left: @sp;
+    	}
+
+    }
+
+    &__cost-rub {
+    	font-family: 'Open Sans Extrabold';
+    	font-size: 36px;
+    	
+    	& i {
+	    	font-size: 33px; 
+	    	font-weight: bold;  		
+    	}
+    }
+
+    &__cost-cop {
+    	font-family: 'Open Sans Bold';
+    	font-size: 21px;
+    }
+}
+
+
