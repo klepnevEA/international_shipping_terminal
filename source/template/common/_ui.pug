@@ -31,7 +31,7 @@
 		.input__wrap
 			input.input__elem(type="text", placeholder="")
 			.input__text введите текст
-			.input__comment Автостанция «Центральная»,  М. «Щелковская»
+			.input__comment Автостанция «Центральная»,	М. «Щелковская»
 			.input__hint
 					ul.input__hint__list
 						li.input__hint__elem
@@ -71,6 +71,27 @@
 
 		p календарь
 		#datepicker.datepicker-wrap
+
+		p попап	
+
+		.btn.popup_open(data-popup="popup_1") Открыть попап
+
+		.popup.popup_close#popup_1 
+			.popup__wrap
+				.popup__wiodow
+					h2.popup__title Вид документа
+					.popup__body
+							ul.document-list
+								li.document-list__item.popup_close
+									a(href='#doc1') Паспорт
+								li.document-list__item.popup_close
+									a(href='#doc2') Заграничный паспорт
+								li.document-list__item.popup_close
+									a(href='#doc3') Военный билет
+								li.document-list__item.popup_close
+									a(href='#doc4') Свидетельсто о рождении
+								li.document-list__item.popup_close
+									a(href='#doc5') Иностранный паспорт
 
 		//- p новый календарь
 		//- <input type="text" id="DatePicker">

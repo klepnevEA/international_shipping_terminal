@@ -98,6 +98,9 @@ $(document).ready(function() {
 			thatInput = thatParent.find('.input__elem');
 			thatInput.val(thatVal);
 			thatParent.addClass('active');
+
+			$('.input__btn-block__sex').removeClass('active');
+			that.addClass('active');
 	});
 
 	// Табы Пасажиров
@@ -107,6 +110,39 @@ $(document).ready(function() {
 	    $(this).tab('show'); 
 	  });
 	});
+
+	/*открытие/закрытие попапа*/
+
+	$('.popup_open').on('click', function() {
+		var that = $(this),
+			thatPopup = that.data('popup');
+
+			$('#'+thatPopup).addClass('active');
+	});
+
+	$('.popup_close').on('click', function(e) {
+		e.stopPropagation();
+		$('.popup').removeClass('active');
+	});
+
+	$('.popup__wrap').on('click', function(e) {
+		e.stopPropagation();
+	});
+
+	$('.popup__title').on('click', function(e) {
+		e.stopPropagation();
+	});
+
+
+	/*выбок документа*/
+
+	$('.document-list__item').on('click', function() {
+		var that = $(this),
+			thatPopup = that.text();
+
+			$('#document').val(thatPopup);
+			$('#document').closest('.input__wrap').addClass('active');	
+	})
 
 	/*новый календарь*/
 
@@ -157,7 +193,11 @@ $(document).ready(function() {
 		    }
 		}
 
-
+	/*маски для инпутов*/ 
+	/*http://digitalbush.com/projects/masked-input-plugin/*/
+	$("#phone_number").mask("+7 999 999 99 99");
+	$("#series_number").mask("99 99 999999");
+	$("#birthday").mask("99/99/9999",{placeholder:"дд/мм/гггг"});
 
 });
 

@@ -1,5 +1,5 @@
 .passenger-block {
-	display: inline-block;
+	display: flex;
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 28px;
@@ -7,8 +7,7 @@
 	
 	&__elem {
 		position: relative;
-		float: left;
-		width: 50%;
+		flex: 1 1 auto;
 		box-sizing: border-box;
 		text-align: center;
 		padding: 27px 10px;
@@ -17,6 +16,7 @@
 		border-style: solid;
 		border-radius: 10px;
 		background-color: #e9eaf2;
+
 
 		&.active {
 			background-color: #fff;
@@ -61,6 +61,10 @@
 			font-family: 'Open Sans Bold';
 			line-height: 1.1;
 			margin-bottom: @sp;
+		}
+
+		&_min-height{
+			min-height: 100px;
 		}
 		.btn_gray {
 			margin-top: 20px;
@@ -112,5 +116,13 @@
 				margin-bottom: 5px;
 			}
 		}
+	}
+
+	&__title {
+		width: 100%;
+	  	font-size: 40px;
+	  	font-family: 'Open Sans Bold';
+	  	line-height: 0.8;
+	  	text-align: center;
 	}
 }
