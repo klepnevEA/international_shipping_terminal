@@ -1,0 +1,100 @@
+.container
+
+	.row
+		.col-xs-12
+			.passenger-block 
+				h2.passenger-block__title Данные о пассажире!
+	.row
+		.col-xs-12.tab-content
+
+			//-пасаажир 1
+			.passenger-wrap#passenger_1.tab-pane.active
+				.row
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Фамилия
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Имя
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Отчество
+				.row
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#birthday(type="text", placeholder="")
+							.input__text Дата рождения
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="", disabled)
+							.input__text Пол
+							.input__btn-block
+								a(href="#", data-sex = "Мужской").input__btn-block__sex М
+								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
+				.row
+					.col-xs-6
+						.input__wrap.input__arrow-down.input__wrap_plain.popup_open(data-popup="popup_1")
+							input.input__elem#document(type="text", placeholder="")
+							.input__text вид документа					
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#series_number(type="text", placeholder="")
+							.input__text серия и номер											
+				.row
+					.col-xs-6
+						.input__wrap.input__arrow-down.input__wrap_plain.active
+							select.input__elem.selectpicker(data-size="5")
+
+								option(value='1') Россия
+								option(value='2') Украина
+								option(value='3') Беларусь
+								option(value='4') Литва
+								option(value='5') США
+								option(value='6') Гернания 
+							.input__text гражданство	
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#phone_number(type="text", placeholder="")
+							.input__text мобильный телефон
+
+
+			
+
+	.row
+		.col-xs-12
+			.card_marker
+				img.card_marker__img(src="../img/img_card_marker.png")
+
+				.card_marker__checkbox
+					input#checkbox.checkbox(type='checkbox')
+					label(for='checkbox') 
+
+				.card_marker__text Выдать карту «ЭЛПАСС»
+					span С картой ЭЛПАСС можно пользоваться городскими, пригородными и междугородными автобусами
+
+
+
+	.row
+		.col-xs-12.content-center
+			a.btn.btn_orange_fill.btn_order-pay(href="#") ПОСМОТРЕТЬ ЗАКАЗ И ОПЛАТИТЬ
+
+
+	.popup.popup_close#popup_1 
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title Вид документа
+					.popup__body
+							ul.document-list
+								li.document-list__item.popup_close
+									a(href='#doc1') Паспорт
+								li.document-list__item.popup_close
+									a(href='#doc2') Заграничный паспорт
+								li.document-list__item.popup_close
+									a(href='#doc3') Военный билет
+								li.document-list__item.popup_close
+									a(href='#doc4') Свидетельсто о рождении
+								li.document-list__item.popup_close
+									a(href='#doc5') Иностранный паспорт

@@ -144,6 +144,13 @@ $(document).ready(function() {
 			$('#document').closest('.input__wrap').addClass('active');	
 	})
 
+	/*переключатель пассажиров*/
+
+	$('.passenger-block__elem').on('click', function() {
+		$('.passenger-block__elem').removeClass('active');
+		$(this).addClass('active');
+	})
+
 	/*новый календарь*/
 
 		$('#datepicker').datepicker({
