@@ -1,4 +1,9 @@
 .container
+
+	.row
+		.col-xs-12
+			.passenger-block 
+				h2.passenger-block__title Данные о пассажире
 	.row
 		.col-xs-12
 			.passenger-block 
@@ -30,13 +35,13 @@
 					.col-xs-6
 						.input__wrap.input__wrap_plain
 							input.input__elem#birthday(type="text", placeholder="")
-							.input__text Дата рождеия
+							.input__text Дата рождения
 					.col-xs-6
 						.input__wrap.input__wrap_plain
 							input.input__elem(type="text", placeholder="", disabled)
 							.input__text Пол
 							.input__btn-block
-								a(href="#", data-sex = "Мужской").input__btn-block__sex.active М
+								a(href="#", data-sex = "Мужской").input__btn-block__sex М
 								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
 				.row
 					.col-xs-6
@@ -50,7 +55,7 @@
 				.row
 					.col-xs-6
 						.input__wrap.input__arrow-down.input__wrap_plain.active
-							select.input__elem.selectpicker(data-size="3")
+							select.input__elem.selectpicker(data-size="5")
 
 								option(value='1') Россия
 								option(value='2') Украина
