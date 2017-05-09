@@ -38,14 +38,53 @@
 		}
 		&-btns {
 			width: 645px;
-			margin: 0 auto 45px;
+			margin: 0 auto 63px;
 			.clearfix
-			.btn_orange_fill, .btn_gray {
+			.btn_gray {
 				text-align: center;
+				span.btn_title__text {
+					text-align: center !important;
+					display: block;
+				}
+			}
+			.btn_orange_fill {
+				text-align: center;
+				span.btn_title__text {
+					text-align: center !important;
+					display: block;
+				}
 			}
 		}
+	}
+	&__btns-2 {
+		margin-bottom: 33px;
+		.clearfix
+	}
+	&__allert {
+		background: @green;
+		color: white;
+		font-size: 22px;
+		height: 58px;
+		margin-top: 3px;
+		line-height: 58px;
 
 
+		&-tell {
+			font-family: 'Open Sans Bold';
+		}
+		&-logo {
+			height: 58px;
+			width: 44px;
+			background: url(../img/logo-w.svg) no-repeat;
+			background-position: center;
+			background-size: 100%;
+			margin-right: @sp;
+			float: left;
+
+		}
+		&-text {
+			float: left;
+		}
 	}
 
 }
