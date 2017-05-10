@@ -65,6 +65,41 @@
 				}				
 			}			
 		}
+
+		&_center {
+			background-image: none;
+			padding: 40px @sp @sp;
+			width: 420px;
+			text-align: center;
+			margin-bottom: 33px;
+			
+			&:after {
+				content: '';
+				//border: 5px solid @gray_light;
+			}
+
+			& .input__elem {
+				text-align: center;
+				font-family: 'Open Sans Bold';
+				font-size: 44px;
+			}
+
+			& .input__text {
+				font-family: 'Open Sans Bold';
+				left: 20px;
+				top: @sp*2;
+				
+			}
+
+			&.active {
+				& .input__text {
+					left: 100px;
+					top: 19px;
+					font-size: 22px;
+				}				
+			}
+
+		}
 	}
 
 	&__elem {
@@ -87,6 +122,11 @@
 		color: @gray;
 		font-size: 38px;
 		text-transform: uppercase;
+		
+		&_long {
+			font-size: 26px;
+			top: 35px;
+		}
 	}
 
 	&__comment {
@@ -217,6 +257,8 @@
 		    color: @gray;
 		}
 	}
+
+
 
 }
 
