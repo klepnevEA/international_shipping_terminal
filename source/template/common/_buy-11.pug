@@ -72,6 +72,59 @@
 						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
 					.order-ticket__rate тариф<br>детский
 					.order-ticket__price 200<i class="mdi mdi-currency-rub"></i>
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 15
+						.order-ticket__number-text номер места
+					.order-ticket__name Карта №123456
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>полный
+					.order-ticket__price 400<i class="mdi mdi-currency-rub"></i>
+			
+			.order-ticket
+				.order-ticket__header Москва — Владимир
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 23
+						.order-ticket__number-text номер места
+					.order-ticket__name Иван Петрович И.
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>детский
+					.order-ticket__price 200<i class="mdi mdi-currency-rub"></i>
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 22
+						.order-ticket__number-text номер места
+					.order-ticket__name Карта №123456
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>полный
+					.order-ticket__price 440<i class="mdi mdi-currency-rub"></i>
 
 
-		
+	.row
+		.col-xs-12
+			.order-ticket__total-cost Итоговая стоимость:
+				span 1 240
+				i.mdi.mdi-currency-rub 
+
+
+	.row
+		.col-xs-4
+			a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+				img(src="../../img/svg/lg.svg")
+				| с «ЭЛПАСС»
+		.col-xs-4
+			a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+				img(src="../../img/svg/wallet.svg")
+				| НАЛИЧНЫМИ
+		.col-xs-4
+			a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+				img(src="../../img/svg/visa.svg")
+				img(src="../../img/svg/maestro.svg")
+				| КАРТОЙ

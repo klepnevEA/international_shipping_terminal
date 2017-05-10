@@ -6,7 +6,7 @@
 	.row
 		.col-xs-12
 			.input__wrap
-				input.input__elem(type="text")
+				input#from_element.input__elem(type="text", aria-haspopup="true", role="textbox")
 				.input__text Откуда
 				.input__hint
 					ul.input__hint__list
@@ -61,11 +61,14 @@
 							a(href="#").input__hint__link
 								.input__hint__name Ярославль
 								.input__hint__text г. Ярославль, Ярославская область, Россия
-				input.input__elem(type="text")
+				input#to_element.input__elem(type="text")
 				.input__text Куда
 
 
 			a(href="#").btn.btn_green.btn_border-green-dark.btn_arrows-circle
+
+
+
 
 
 
