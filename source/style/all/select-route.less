@@ -17,6 +17,7 @@
 		border-style: solid;
 		border-radius: 10px;
 		background-color: #e9eaf2;
+		margin-right: -3px;
 
 		&.active {
 			background-color: #fff;
@@ -24,12 +25,13 @@
 			&:after {
 				content: '';
 				position: absolute;
-			    width: 101.3%;
+			    width: calc(~'100% + 4px');
 			    height: 10px;
 			    left: -3px;
 			    bottom: -3px;
 				background-color: @orange;
 		        border-radius: 0 0 10px 10px;
+		        z-index:1000;
 			}
 		}
 	}

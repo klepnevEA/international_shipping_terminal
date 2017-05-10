@@ -5,6 +5,10 @@
 		font-family: 'Open Sans Bold';
 		font-size: 40px;
 		color: @green;
+		
+		& .ui-state-active {
+			width: 96px !important;
+		}
 	} 
 }
 
@@ -21,7 +25,11 @@
 
 	& td a {
 	    padding: 1px 3px 5px;
-	    line-height: 1.2;	
+	    line-height: 1.2;
+	    
+	    &:after {
+	    	height: 14px;
+	    }	
 	}
 
 	& td span {
@@ -152,7 +160,9 @@
 		border-radius: 10px;
 		color: #000 !important;
 		font-size: 44px;
-		font-family: 'Open Sans Bold';		
+		font-family: 'Open Sans Bold';
+		width: 96px;
+		height: 78px;	
 		&:after {
 			display: block;
 			
@@ -193,7 +203,7 @@
 			color: @gray !important;
 			padding: 10px 3px 10px;
 			&:after {
-				content:'' !important;
+				
 			}
 
 			&:before {
