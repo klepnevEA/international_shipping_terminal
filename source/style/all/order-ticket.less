@@ -20,9 +20,13 @@
 		justify-content:space-between;
 		height: 65px;
 		align-items: center;
+		
+		&:last-child {
+			border-bottom: 0px;
+		}
 	}
 	&__number {
-		width: 300px;
+		width: 285px;
 		padding-left: 25px;
 		.mdi-seat-recline-extra {
 			color: @green;
@@ -55,8 +59,10 @@
 		font-family: 'Open Sans Semibold';
 		font-size: 22px;
 		color: black;
+		width: 300px;
 	}
 	&__btn {
+		width: 295px;
 		.btn_green {
 			height: 50px;
 			line-height: 50px;
@@ -71,6 +77,37 @@
 				margin-top: 15px;
 				margin-right: 5px;
 			}
+		}
+	}
+
+	&__price {
+		font-family: 'Open Sans Bold';
+		font-size: 44px;
+		margin-right: @sp;
+		
+		i {
+			font-size: 39px;
+		}
+	}
+
+	&__rate {
+		color: @gray;
+		font-family: 'Open Sans Bold';
+		font-size: 16px;
+		text-align: right;
+	}
+
+	&__total-cost {
+		font-family: 'Open Sans Bold';
+		font-size: 30px;
+		text-align: right;
+		
+		span {
+			font-size: 48px;
+		}
+
+		i {
+			font-size: 44px;
 		}
 	}
 }
