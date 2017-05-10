@@ -202,9 +202,11 @@ $(document).ready(function() {
 
 	/*маски для инпутов*/ 
 	/*http://digitalbush.com/projects/masked-input-plugin/*/
-	$("#phone_number").mask("+7 999 999 99 99");
+	$("#phone_number").mask("(999) 999 99 99");
 	$("#series_number").mask("99 99 999999");
 	$("#birthday").mask("99/99/9999",{placeholder:"дд/мм/гггг"});
+
+
 
 });
 
