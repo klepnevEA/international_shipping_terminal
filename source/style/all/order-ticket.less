@@ -1,0 +1,76 @@
+.order-ticket {
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(201, 203, 216);
+	border-radius: 10px;
+	background-color: white;
+	overflow: hidden;
+	margin-top: 15px;
+	&__header {
+		padding: 0 25px;
+		height: 55px;
+		font-family: 'Open Sans Bold';
+		font-size: 28px;
+		line-height: 55px;
+		background: #f1f2f7;
+	}
+	&__list {
+		display: flex;
+		border-bottom: 2px solid rgb(201, 203, 216);
+		justify-content:space-between;
+		height: 65px;
+		align-items: center;
+	}
+	&__number {
+		width: 300px;
+		padding-left: 25px;
+		.mdi-seat-recline-extra {
+			color: @green;
+			font-size: 47px;
+			float: left;
+			padding-top: 7px;
+		}
+		&-value {
+			float: left;
+			font-family: 'Open Sans Bold';
+			color: black;
+			font-size: 44px;
+			line-height: 60px;
+			height: 65px;
+			margin-right: 10px;
+		}
+		&-text {
+			float: left;
+			font-size: 16px;
+			line-height: 1.2;
+			height: 65px;
+			text-transform: uppercase;
+			color: #aaaaaa;
+			font-family: 'Open Sans Bold';
+			width: 100px;
+			padding-top: 14px;
+		}
+	}
+	&__name {
+		font-family: 'Open Sans Semibold';
+		font-size: 22px;
+		color: black;
+	}
+	&__btn {
+		.btn_green {
+			height: 50px;
+			line-height: 50px;
+			font-size: 22px;
+			padding: 0 25px;
+			margin-top: 10px;
+			i {
+				font-size: 30px;
+				line-height: 20px;
+				display: block;
+				float: left;
+				margin-top: 15px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
