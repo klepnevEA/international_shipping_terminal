@@ -1,0 +1,43 @@
+.bg-content
+	.container
+		.row
+			.col-xs-12
+				.order-card
+					h1.title Заказ №1334 4553 445
+
+	.amount-to-payment
+		.container
+			.row
+				.col-xs-12
+					.amount-to-payment__text сумма<br> к оплате
+					.amount-to-payment__sum 
+						span 4 560 
+							i.mdi.mdi-currency-rub
+						| 00 коп
+	.container
+		.col-xs-2
+		.col-xs-8
+
+			.lk__pin.lk__pin_buy-22
+				.lk__pin-label Введите пин-код
+				input.lk__pin-inputpin(value='' type="password" maxlength="6")
+			.lk__pin-btns.lk__pin-btns_buy-22
+				.btn.btn_title.btn_orange.btn_orange_fill.btn_gray.popup_open(data-popup="popup_2") Открыть попап
+		.col-xs-2 
+
+		
+
+		.popup.popup_close#popup_2 
+			.popup__wrap.popup__wrap_big
+				.popup__wiodow
+					.popup__body 
+						.confirm-request
+							.confirm-request__img
+							.confirm-request__title Подтвердите запрос
+							.confirm-request__text на получение карты 
+							.confirm-request__btn
+								.row
+									.col-xs-6
+										a.btn.btn_orange_fill.btn_width-100(href="#") Выдать карту
+									.col-xs-6
+										a.btn.btn_gray.btn_width-100(href="#") Отмена
