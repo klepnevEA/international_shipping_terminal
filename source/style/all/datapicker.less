@@ -6,14 +6,40 @@
 		font-size: 40px;
 		color: @green;
 		
+
+
+		& .ui-state-hover {
+			background-color: #fff;
+	
+			&:hover {
+				border:0px solid #e9eaf2 !important;
+				padding-top: 4px;
+				box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+			}		
+			&:active {
+				background-color: #e9eaf2;
+			}
+		}
+
 		& .ui-state-active {
 			width: 96px !important;
 			background-color: @green;
+			color: #fff !important;
+			
+			&:active {
+				background-color: @green_dark !important;
+			}
 		}
 
 	} 
 }
 
+.datepicker-wrap .ui-state-active:hover {
+		box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+		border: 0px solid @green !important;
+		padding-top:4px;
+		background-color: @green;
+}
 
 .ui-datepicker {
     padding: .2em 0.1em 0;
@@ -114,7 +140,7 @@
 
 	&-calendar {
 		& tbody{
-			position: relative;
+			//position: relative;
 			
 			& tr td{
 				position: relative;

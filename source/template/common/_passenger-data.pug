@@ -10,7 +10,9 @@
 				a(href='#passenger_3').passenger-block__elem
 					.passenger-block__text пасажир 3 
 				a(href='#passenger_4').passenger-block__elem
-					.passenger-block__text пасажир 4 
+					.passenger-block__text пасажир 4
+				a(href='#passenger_5').passenger-block__elem
+					.passenger-block__text пасажир 5 
 	.row
 		.col-xs-12.tab-content
 
@@ -226,6 +228,63 @@
 						.input__wrap.input__wrap_plain
 							input.input__elem#phone_number_4(type="text", placeholder="")
 							.input__text мобильный телефон
+
+
+			//-пасаажир 5
+			.passenger-wrap#passenger_5.tab-pane.fade
+				.row
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Фамилия
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Имя
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Отчество
+				.row
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#birthday_5(type="text", placeholder="")
+							.input__text Дата рождения
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="", disabled)
+							.input__text Пол
+							.input__btn-block
+								a(href="#", data-sex = "Мужской").input__btn-block__sex М
+								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
+				.row
+					.col-xs-6
+						.input__wrap.input__arrow-down.input__wrap_plain.popup_open(data-popup="popup_1")
+							input.input__elem#document_5(type="text", placeholder="")
+							.input__text вид документа					
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#series_number_5(type="text", placeholder="")
+							.input__text серия и номер											
+				.row
+					.col-xs-6
+						.input__wrap.input__arrow-down.input__wrap_plain.active
+							select.input__elem.selectpicker(data-size="5")
+
+								option(value='1') Россия
+								option(value='2') Украина
+								option(value='3') Беларусь
+								option(value='4') Литва
+								option(value='5') США
+								option(value='6') Гернания 
+							.input__text гражданство	
+					.col-xs-6
+						.input__wrap.input__wrap_plain
+							input.input__elem#phone_number_5(type="text", placeholder="")
+							.input__text мобильный телефон
+
+
+
 
 	.row
 		.col-xs-12

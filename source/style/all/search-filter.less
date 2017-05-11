@@ -3,20 +3,28 @@
 	    margin: 20px 0 @sp;
 
 	&__link {
-
+		position: relative;
 		float: left;
 		font-family: 'Open Sans';
 		font-size: 24px;
 		color: #000;
 		text-decoration: none;
 		line-height: 2.6;
+		margin-right: 40px;
 		
 		& i {
-			position: relative;
-			top: 10px;
+			position: absolute;
 			color: @gray;
 			font-size: 50px;
 			line-height: 0;
+			top: 32px;
+		}
+
+		&.active {
+			& i {
+
+				transform: rotate(-180deg);
+			}
 		}
 
 	}
@@ -29,6 +37,7 @@
   		width: 400px;
   		height: 65px;
   		margin: 0 @sp;
+  		background-color: #fff;
   		
   		&:after {
 
@@ -42,11 +51,19 @@
 			line-height:1.2;
 			cursor: pointer; 
   		}
+
+  		&.active {
+  			&:after {
+  				content: '\f35d';
+ 
+  			}
+  		}
   		
 
 	}
 
 	&__elem {
+		position: relative;
 		width: 100%;
 		height: 100%;
   		font-size: 24px;
@@ -56,6 +73,13 @@
   		padding: 0 50px 0 10px;
   		border: 0px solid @gray_light;
   		outline: 0;
+  		z-index:1000;
+  		background-color: transparent;
+  		
+		&::-webkit-input-placeholder {color:#000;}
+		&::-moz-placeholder          {color:#000;}
+		&:-moz-placeholder           {color:#000;}
+		&:-ms-input-placeholder      {color:#000;}
 	}
 
 }
