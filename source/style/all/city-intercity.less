@@ -1,0 +1,42 @@
+.city-intercity {
+	margin-bottom: 20px;
+	
+	&__wrap {
+		border: 3px solid @gray_light;
+        border-radius: 10px;
+        padding: 3px;
+        
+        .clearfix;
+	}
+
+
+
+	&__btn {
+		float: left;
+	    width: calc(~'50% - 2px');
+	    height: 100%;
+	    box-sizing: border-box;
+	    border: 3px solid transparent;
+	    border-radius: 10px;
+	    background-color: transparent;
+	    text-align: center;
+	    color: #000;
+	    font-family: 'Open Sans Bold';
+	    font-size: 26px;
+	    text-decoration: none;
+	    line-height: 2.3;
+	    text-transform: uppercase;
+	    
+	    &:last-child {
+	    	float: right;
+	    	margin-right: 0px;
+	    }
+
+	    &.active {
+	    	border: 3px solid @green_dark;
+	    	background-color: @green;
+	    	color: #fff;
+	    }
+	}
+}
+
