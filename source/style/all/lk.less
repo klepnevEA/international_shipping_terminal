@@ -162,12 +162,14 @@
 	&-menu {
 		background: white;
 		height: 1024px - 130px;
+		width: 365px;
+		float: right;
 		&__wrap {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between; 
 			height: @height-c;
-			padding-left: @sp;
+			padding-left: @sp*2;
 		}
 		&_wr {
 			width: 100%;
@@ -213,6 +215,7 @@
 			line-height: 1;
 			height: 42px;
 			margin-bottom: 40px;
+			letter-spacing: -1.3px;
 		}
 		&__list {
 
@@ -267,9 +270,9 @@
 			}
 			&-cards {
 				background: url(../img/svg/cards.svg) no-repeat;
-				background-size: auto 30px;
+				background-size: auto 29px;
 				background-position: center;
-				width: 155px;
+				width: 146px;
 				height: 70px;
 				float: left;
 				margin-right: 10px;
