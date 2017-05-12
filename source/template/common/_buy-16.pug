@@ -2,20 +2,21 @@
 	.container
 		.row
 			.col-xs-12
-				.order-card
-					h1.title.title_margin-top-125 Оплата с баланса ЭЛПАСС
-		.row
-			.col-xs-2
-			.col-xs-8
-				.input__wrap.input__wrap_plain
-					input.input__elem#phone_number_new(type="text", placeholder="")
-					.input__text.input__text_long Введите номер телефона в формате: (999) 111 22 33
-			.col-xs-2
+				.lk 
+					h1.title вход в личный кабинет
+					.row
+						.col-xs-2
+						.col-xs-8
+							.lk__pin
+								.lk__pin-label телефон в формате: (999) 11 22 33
+								input.lk__tell-inputpin(type="tel" maxlength="11") 
+							.lk__tell-btns
+								a.btn.btn_width-100.btn_big.btn_orange_fill(href="#") Продолжить 
+						
+		
 
-		.row
-			.col-xs-2
-			.col-xs-8
-				a.btn.btn_width-100.btn_big.btn_orange_fill(href="#") Продолжить
-			.col-xs-2
+
+
+			
 
 	
