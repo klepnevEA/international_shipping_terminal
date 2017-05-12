@@ -1,0 +1,107 @@
+.my-cards {
+	box-shadow: inset -16px 0px 31px -16px rgba(0,0,0,0.43);
+	height: @height-c;
+	.title {
+		font-size: 55px;
+		line-height: 55px;
+		height: 55px;
+		margin-top: 45px;
+		margin-bottom: 10px;
+	}
+	&__slider {
+		.clearfix;
+		&-line {
+			.clearfix;
+			.col-xs-4 {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+		.slick-arrow {
+			width: 100%;
+			margin: 10px 0;
+			height: 54px;
+			cursor: pointer;
+			.clearfix;
+		}
+		.slick-prev {
+			&:after {
+				background-image: url(../img/svg/st-top.svg);
+			}
+		}
+		.slick-next {
+			&:after {
+				background-image: url(../img/svg/st-top.svg);
+				transform: rotate(-180deg); 
+			}
+		}	
+		.slick-list {
+			width: 100%;
+		}
+	}
+	&__item {
+		height: 195px;
+		border: 3px solid @green;
+		border-radius: 10px;
+		background: white;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		&-header {
+			background: @green;
+			color: white;
+			padding: 12px 12px;
+			i {
+				font-size: 25px;
+				margin-right: 5px;
+				float: left;
+				margin-top: -7px;
+				height: 100%;
+			}
+		}
+		&_red {
+			border: 3px solid @orange;
+			.my-cards__item-header {
+				background: @orange;
+			}
+			.my-cards__item-number {
+				color: #884202;
+			}
+		}
+		&-title {
+			text-transform: uppercase;
+			color: white;
+			font-family: 'Open Sans Bold';
+			font-size: 15px;
+			white-space: nowrap;
+			
+		}
+		&-number {
+			color: #447227;
+			font-family: 'Open Sans Bold';
+			font-size: 15px;
+			white-space: nowrap;
+			
+		}
+		&-name {
+			font-size: 21px;
+			font-family: 'Open Sans Semibold';
+			color: black;
+			margin: 15px;
+			line-height: 1.2;
+			height: 50px;
+			overflow: hidden;
+		}
+		&-tell {
+			font-family: 'Open Sans Bold';
+			font-size: 21px;
+			color: black;
+			line-height: 21px;
+			height: 21px;
+			margin-left: 15px;
+		}
+	}
+	&__btns {
+		width: 590px;
+		margin: 25px auto 0;
+	}
+}

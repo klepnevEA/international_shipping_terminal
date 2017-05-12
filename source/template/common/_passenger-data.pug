@@ -38,11 +38,8 @@
 							.input__text Дата рождения
 					.col-xs-6
 						.input__wrap.input__wrap_plain
-							input.input__elem(type="text", placeholder="", disabled)
-							.input__text Пол
-							.input__btn-block
-								a(href="#", data-sex = "Мужской").input__btn-block__sex М
-								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
+							input.input__elem#phone_number(type="text", placeholder="")
+							.input__text мобильный телефон
 				.row
 					.col-xs-6
 						.input__wrap.input__arrow-down.input__wrap_plain.popup_open(data-popup="popup_1")
@@ -66,8 +63,12 @@
 							.input__text гражданство	
 					.col-xs-6
 						.input__wrap.input__wrap_plain
-							input.input__elem#phone_number(type="text", placeholder="")
-							.input__text мобильный телефон
+							
+							input.input__elem(type="text", placeholder="", disabled)
+							.input__text Пол
+							.input__btn-block
+								a(href="#", data-sex = "Мужской").input__btn-block__sex М
+								a(href="#", data-sex = "Женский").input__btn-block__sex Ж
 
 
 			//-пасаажир 2

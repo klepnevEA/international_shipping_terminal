@@ -191,199 +191,200 @@
 	}
 }
 
-.slider{
-	.clearfix;
-	
-	
-	.row {
-	    margin-left: 0px;
-	    margin-right: 0px;
-	}
-
-	.col-xs-4 {
-		padding-left: @sp/3;
-    	padding-right: @sp/3;
-    	margin-bottom: @sp/3;
-	}
-
-
-	&__wrap {
-		height: 460px;
+	.slider{
 		.clearfix;
 		
-		&_bus {
-			height: 225px;
-		}
-	}
-
-	&__block {
-		width: 100%;
-		height: 225px;
-
 		
-		&_date {
-			width: 100%;
-			height: 155px;
-			border-top: 3px;
-			border-left: 3px;
-			border-bottom: 0px;
-			border-right: 3px;
-			border-style:solid;
-			border-radius: 13px 13px 0 0;
-			border-color: @gray_light;
-			box-sizing: border-box;
-			padding: @sp 25px;
-			background-color: #fff;
+		.row {
+		    margin-left: 0px;
+		    margin-right: 0px;
 		}
 
-		&_prise {
-			width: 100%;
-			height: 65px;
-			background-color: @orange;
-			text-align: center;
-			border-radius: 0 0 13px 13px;
-			color: #fff;
-			font-family: 'Open Sans Bold';
-			font-size: 42px;
-			line-height: 1.6;
-		}
-
-		&_go-to {
-			color: @gray;
-			font-family: 'Open Sans Semibold';
-			font-size: 16px;
-			line-height: 1;
-			.clearfix;
-			
-			& span:last-child {
-				float: right;
-			}
-		}
-
-		&_time {
-			font-family: 'Open Sans Bold';
-			font-size: 38px;
-			text-align: center;
-			line-height: 1;
-			.clearfix;
-			& span:last-child {
-				float: right;
-			}
-
-			& span:first-child {
-				float: left;
-			}
-		}
-
-		&_days {
-			color: @gray;
-			font-family: 'Open Sans Semibold';
-			font-size: 16px;
-			line-height: 1;
-			.clearfix;
-			
-			& span {
-				float: right;
-			}
-		}
-
-		&_transfer {
-			color: @orange;
-			font-family: 'Open Sans Semibold';
-			font-size: 20px;
-			line-height: 1;
-			margin-bottom: @sp/3;
+		.col-xs-4 {
 			padding-left: @sp/3;
-			opacity: 0;
+	    	padding-right: @sp/3;
+	    	margin-bottom: @sp/3;
+		}
+
+
+		&__wrap {
+			height: 460px;
 			.clearfix;
 			
-			&.active {
-				opacity: 1;	
-			}
-			
-			& i {
-				margin-right: @sp/3;
-				font-size: 15px;
+			&_bus {
+				height: 225px;
 			}
 		}
 
-		&_total-time {
-			color: @gray;
-			font-family: 'Open Sans Semibold';
-			font-size: 20px;
-			line-height: 1;
-			.clearfix;
+		&__block {
+			width: 100%;
+			height: 225px;
+
 			
-			& i {
-				font-size: 22px;
-				margin-right: @sp/3;
-			}			
+			&_date {
+				width: 100%;
+				height: 155px;
+				border-top: 3px;
+				border-left: 3px;
+				border-bottom: 0px;
+				border-right: 3px;
+				border-style:solid;
+				border-radius: 13px 13px 0 0;
+				border-color: @gray_light;
+				box-sizing: border-box;
+				padding: @sp 25px;
+				background-color: #fff;
+			}
+
+			&_prise {
+				width: 100%;
+				height: 65px;
+				background-color: @orange;
+				text-align: center;
+				border-radius: 0 0 13px 13px;
+				color: #fff;
+				font-family: 'Open Sans Bold';
+				font-size: 42px;
+				line-height: 1.6;
+			}
+
+			&_go-to {
+				color: @gray;
+				font-family: 'Open Sans Semibold';
+				font-size: 16px;
+				line-height: 1;
+				.clearfix;
+				
+				& span:last-child {
+					float: right;
+				}
+			}
+
+			&_time {
+				font-family: 'Open Sans Bold';
+				font-size: 38px;
+				text-align: center;
+				line-height: 1;
+				.clearfix;
+				& span:last-child {
+					float: right;
+				}
+
+				& span:first-child {
+					float: left;
+				}
+			}
+
+			&_days {
+				color: @gray;
+				font-family: 'Open Sans Semibold';
+				font-size: 16px;
+				line-height: 1;
+				.clearfix;
+				
+				& span {
+					float: right;
+				}
+			}
+
+			&_transfer {
+				color: @orange;
+				font-family: 'Open Sans Semibold';
+				font-size: 20px;
+				line-height: 1;
+				margin-bottom: @sp/3;
+				padding-left: @sp/3;
+				opacity: 0;
+				.clearfix;
+				
+				&.active {
+					opacity: 1;	
+				}
+				
+				& i {
+					margin-right: @sp/3;
+					font-size: 15px;
+				}
+			}
+
+			&_total-time {
+				color: @gray;
+				font-family: 'Open Sans Semibold';
+				font-size: 20px;
+				line-height: 1;
+				.clearfix;
+				
+				& i {
+					font-size: 22px;
+					margin-right: @sp/3;
+				}			
+			}
 		}
 	}
-}
 
-/*исправления*/
+	/*исправления*/
 
-.slick-prev {
-	display: inline-block;
-	height: 100%;
-	position: relative;
-	float: left;
-	background-color: transparent;
-	border:0;
-	color:  transparent;
-	outline: none;
-	width: 80px;
-	margin-right: 25px;
-	
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		font-size: 200px;
-		color: @green;
+	.slick-prev {
 		display: inline-block;
-		background-image: url(../img/svg/arrow_green.svg);
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	
-}
-
-.slick-list {
-	display: inline-block;
-	float: left;
-	width: 81.5%;
-}
-
-.slick-next {
-	display: inline-block;
-	height: 100%;
-	position: relative;
-	float: left;
-	background-color: transparent;
-	border:0;
-	color:  transparent;
-	outline: none;
-	width: 80px;
-	margin-left: 25px;
-	
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
 		height: 100%;
-		font-size: 200px;
-		color: @green;
-		display: inline-block;
-		background-image: url(../img/svg/arrow_green.svg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		transform: rotate(180deg);
+		position: relative;
+		float: left;
+		background-color: transparent;
+		border:0;
+		color:  transparent;
+		outline: none;
+		width: 80px;
+		margin-right: 25px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 200px;
+			color: @green;
+			display: inline-block;
+			background-image: url(../img/svg/arrow_green.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		
 	}
-}
+
+	.slick-list {
+		display: inline-block;
+		float: left;
+		width: 81.5%;
+	}
+
+	.slick-next {
+		display: inline-block;
+		height: 100%;
+		position: relative;
+		float: left;
+		background-color: transparent;
+		border:0;
+		color:  transparent;
+		outline: none;
+		width: 80px;
+		margin-left: 25px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 200px;
+			color: @green;
+			display: inline-block;
+			background-image: url(../img/svg/arrow_green.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			transform: rotate(180deg);
+		}
+	}
+

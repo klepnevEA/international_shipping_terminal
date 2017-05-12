@@ -40,10 +40,20 @@ $(document).ready(function() {
 		$('.menu-nav').removeClass('active');
 	});
 
-	/*сладжер*/
+	/*слайдер*/
 	$(".slider__wrap").slick({
 	    dots: false,
 	    arrows: true
+	});
+	$(".my-cards__slider").slick({
+	    dots: false,
+	    arrows: true,
+	    vertical: true,
+	    slidesToShow: 2,
+	    slidesToScroll: 2,
+	    verticalSwiping: true
+
+	   
 	});
 
 	/*с пересадкой / без пересадки*/

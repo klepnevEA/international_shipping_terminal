@@ -120,5 +120,122 @@
 			}
 		}
 	}
+	&-menu {
+		background: white;
+		height: 1024px - 130px;
+		&__wrap {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between; 
+			height: @height-c;
+			padding-left: @sp;
+		}
+		&_wr {
+			width: 100%;
+			height: @height-c;
+			&-left {
+				float: left;
+				width: @width-lr;
+				
+				height: 1024px - 130px;
+			}
+			&-center {
+				float: left;
+				
+				height: @height-c;
+				width: @width-c;
+				
+				
+			}
+			&-right {
+				float: left;
+				background: white;
+				width: @width-lr;
+				height: @height-c;
+			}
+		}
+		&__top {
+			margin-top: 75px;
+		}
+		&__title {
+			font-size: 29px;
+			color: black;
+			font-family: 'Open Sans Extrabold';
+			text-transform: uppercase;
+			line-height: 1;
+			height: 30px;
+			margin-bottom: 15px;
+		}
+		&__tell {
+			font-size: 42px;
+			color: @green;
+			font-family: 'Open Sans Extrabold';
+			text-transform: uppercase;
+			line-height: 1;
+			height: 42px;
+			margin-bottom: 40px;
+		}
+		&__list {
 
+		}
+		&__item {
+			border-bottom: 3px solid @gray_light;
+			border-top: 3px solid @gray_light;
+			margin-top: -3px;
+			padding: 25px 0;
+		}
+		&__name {
+			color: #adadac;
+			font-size: 22px;
+			line-height: 1;
+			height: 22px;
+			font-family: 'Open Sans Extrabold';
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+		&__value {
+			font-size: 45px;
+			color: black;
+			font-family: 'Open Sans Extrabold';
+			text-transform: uppercase;
+			line-height: 1;
+			height: 45px;
+			span {
+				font-family: 'Open Sans Bold';
+				font-size: 24px;
+				text-transform: lowercase;
+			}
+			i {
+				font-size: 40px;
+			}
+		}
+		&__bottom {
+			margin-bottom: 35px;
+			.btn {
+				margin-bottom: @sp;
+			}
+			.lk-menu__title {
+				margin-bottom: 25px;
+			}
+		}
+		&__btn {
+			.btn {
+				padding: 0 30px;
+			}
+			i {
+				font-size: 48px;
+				float: left;
+			}
+			&-cards {
+				background: url(../img/svg/cards.svg) no-repeat;
+				background-size: auto 30px;
+				background-position: center;
+				width: 155px;
+				height: 70px;
+				float: left;
+				margin-right: 10px;
+			}
+			
+		}
+	}
 }
