@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	/*рабочее меню*/ 
 	
-	var menuAct;
+
 	$('.menu-nav').mouseover( function(){
 		$('.menu-nav').addClass('active');
 	});
@@ -40,7 +40,8 @@ $(document).ready(function() {
 		$('.menu-nav').removeClass('active');
 	});
 
-	/*слайдер*/
+	/*сладжер*/
+
 	$(".slider__wrap").slick({
 	    dots: false,
 	    arrows: true

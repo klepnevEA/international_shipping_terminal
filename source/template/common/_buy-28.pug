@@ -3,7 +3,8 @@
 	.row
 		.col-xs-12
 			.passenger-block.passenger-block_elpas 
-				h2.passenger-block__title Регистрация в ЭЛПАСС
+				h2.passenger-block__title ЭЛПАСС-Виртуальная №000174: 
+					span.passenger-block__title_green  Активна
 	.row
 		.col-xs-12.tab-content
 
@@ -21,11 +22,14 @@
 						.input__wrap.input__wrap_plain
 							input.input__elem#phone_number(type="text", placeholder="")
 							.input__text мобильный телефон
-					.col-xs-8
+					.col-xs-4
 						
 						.text.text_italic.text_gray.text_info
 							i.mdi.mdi-information-outline
 							p Укажите номер, чтобы получить на него SMS с пин-кодом<br> для входа в личный кабинет
+					.col-xs-4
+						input#checkbox.checkbox(type='checkbox')
+						label(for='checkbox') Выслать в SMS<br> новый пин-код
 				.row
 					.col-xs-4
 						.input__wrap.input__wrap_plain
@@ -95,11 +99,12 @@
 
 
 	.row
-		.col-xs-3
-		.col-xs-6.content-center
-			a.btn.btn_orange_fill.btn_order-pay.btn_width-100(href="#") Зарегистрироваться
-		.col-xs-3
-
+		.col-xs-4
+			a.btn.btn_orange_fill.btn_order-pay.btn_width-100(href="#") Сохранить
+		.col-xs-4.content-center
+			a.btn.btn_gray.btn_order-pay.btn_width-100(href="#") Отвязать карту
+		.col-xs-4
+			a.btn.btn_gray.btn_order-pay.btn_width-100(href="#") Отмена
 
 	.popup.popup_close#popup_1 
 		.popup__wrap

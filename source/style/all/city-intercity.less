@@ -27,6 +27,8 @@
 	    line-height: 2.3;
 	    text-transform: uppercase;
 	    
+
+	    
 	    &:last-child {
 	    	float: right;
 	    	margin-right: 0px;
@@ -36,6 +38,17 @@
 	    	border: 3px solid @green_dark;
 	    	background-color: @green;
 	    	color: #fff;
+	    	
+			&:hover {
+				box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+				border:0px solid @green;
+				padding: 3px;
+			}
+
+			&:active {
+				background-color: @green_dark !important;
+				
+			}
 	    }
 	}
 }
