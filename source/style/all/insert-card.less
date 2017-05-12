@@ -32,6 +32,42 @@
 		text-align: center;
 		color: @gray;
 	}
+
+	&_mini {
+		.clearfix;
+		position: relative;
+		top: -10px;
+		display: block;
+		padding: 0;
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		& .insert-card__images {
+			float: left;
+			transform: rotate(180deg);
+			margin-right: 0;
+			
+			img {
+				position: relative;
+				top: 5px;
+				width: 100px;
+				height: 110px;
+				margin-right: 0;			
+			}
+		}
+
+
+		& .insert-card__text {
+			float: left;
+			width: 500px;
+			margin-left: 120px;
+		  font-size: 32px;
+		  font-family: 'Open Sans Bold';
+		  line-height: 1.4;
+		  text-align: center;
+		}
+
+	}
 }
 
 

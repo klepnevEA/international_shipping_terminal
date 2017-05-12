@@ -114,10 +114,9 @@
 		height: 70px;
 		line-height: 70px;
 		padding: 0 25px;
-		&:hover {
+		&:active {
 			background-color: #a6a8b7 !important;
 		}
-
 	}
 	&_center {
 		display: inline-block;
@@ -263,5 +262,18 @@
 
 
 	}
+
+	&_dasabled {
+		opacity: 0.4;
+		cursor: default;
+		&:hover {
+			box-shadow: none;
+		}
+
+		&:active.btn_orange_fill  {
+			background-color: @orange;
+		}				
+	}
 }
+
 
