@@ -1,4 +1,6 @@
 .checkbox {
+  position: relative;
+  top: 5px;
   vertical-align: top;
   
   width: 17px;
@@ -16,10 +18,10 @@
 .checkbox:not(checked) + label {
   display: inline-block;
   height: 70px;
-  margin: 20px 0 @sp;
-  line-height: 2.7;
+  margin: @sp 0 0;
+  line-height: 1.1;
   position: relative; 
-  padding: 0 0 0 85px;
+  padding: 0 0 0 80px;
   font-size: 24px;
   font-family: 'Open Sans Bold';
 }
@@ -28,7 +30,7 @@
   content: '';
   position: absolute;
   box-sizing: border-box;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 65px;
   height: 65px;
@@ -42,7 +44,7 @@
   content: '\f12c';
   font-family: "Material Design Icons";
   position: absolute;
-  top: -7px;
+  top: -12px;
   left: 0px;
   font-size: 65px;
   color: #fff;
