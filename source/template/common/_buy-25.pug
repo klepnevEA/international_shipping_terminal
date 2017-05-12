@@ -1,0 +1,79 @@
+.container
+
+	.row
+		.col-xs-12
+			.passenger-block 
+				h2.passenger-block__title Регистрация в ЭЛПАСС
+	.row
+		.col-xs-12.tab-content
+
+
+			.passenger-wrap-elpas#passenger_1.tab-pane.active
+				.row
+					.col-xs-12
+						.city-intercity
+							.city-intercity__wrap
+								a(href="#").city-intercity__btn городские и пригородные
+								a(href="#").city-intercity__btn.active междугородные и международные
+				//-пасаажир 1
+				.row
+					.col-xs-4
+						.input__wrap.input__wrap_plain
+							input.input__elem#phone_number(type="text", placeholder="")
+							.input__text мобильный телефон
+					.col-xs-8
+						
+						.text.text_italic.text_gray.text_info
+							i.mdi.mdi-information-outline
+							p Укажите номер, чтобы получить на него SMS с пин-кодом для входа в личный кабинет
+				.row
+					.col-xs-12
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Фамилия
+					.col-xs-12
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Имя
+					.col-xs-12
+						.input__wrap.input__wrap_plain
+							input.input__elem(type="text", placeholder="")
+							.input__text Отчество
+
+
+	.row
+		.col-xs-12
+			.comments
+				img.comments__img(src="img/question.png")
+
+
+				.comments__text 
+
+					p Вы решили воспользоваться услугами перевозки пассажиров и багажа по заказу. Организатором заказных перевозок выступает ООО «ЭЛПАСС». Для получения разъяснений требований законодательства РФ нажмите на знак вопроса.
+					p Аккуратно заполните регистрационную форму ниже. Вы несете ответственность за достоверность указываемых вами сведений.
+
+
+
+	.row
+		.col-xs-3
+		.col-xs-6.content-center
+			a.btn.btn_orange_fill.btn_order-pay.btn_width-100(href="#") Зарегистрироваться
+		.col-xs-3
+
+
+	.popup.popup_close#popup_1 
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title Вид документа
+					.popup__body
+							ul.document-list
+								li.document-list__item.popup_close
+									a(href='#doc1') Паспорт
+								li.document-list__item.popup_close
+									a(href='#doc2') Заграничный паспорт
+								li.document-list__item.popup_close
+									a(href='#doc3') Военный билет
+								li.document-list__item.popup_close
+									a(href='#doc4') Свидетельсто о рождении
+								li.document-list__item.popup_close
+									a(href='#doc5') Иностранный паспорт
