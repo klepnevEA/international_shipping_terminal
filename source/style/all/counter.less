@@ -107,4 +107,45 @@
 	&_disabled {
 		height: 155px;
 	}
+
+	&_dispatch {
+		padding-top: @sp;
+		.counter__title {
+			float: left;
+			margin-right: 25px;
+			line-height: 2.6;
+			color: #000;
+		}
+
+		.counter__box {
+			float: left;
+		}
+
+		.counter__input {
+			width: 195px;
+			margin: 0 12px;
+			line-height: 1.4;
+		}
+
+		.counter__plus,.counter__minus {
+			width: 76px;
+		 	height: 74px;
+		 	
+		 	&:before {
+			    top: 0px;
+			    left: 3px;
+		 	}
+
+		 	&:hover {
+
+			 	&:before {
+				    top: 3px;
+				    left: 6px;
+			 	}
+
+			}			
+		}
+	}
 }
+
+

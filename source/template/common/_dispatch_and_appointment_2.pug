@@ -72,14 +72,20 @@
 	.row
 		.col-xs-12
 
-			.passengers 
-				.passengers__text Пассажиров
-				.passengers__counter 
-					a(href="#").passengers__btn.passengers__btn-plus +
-					input(type="text", disabled, value="2").passengers__input
-					a(href="#").passengers__btn.passengers__btn-minus &ndash;
+			//-.passengers 
+				//- .passengers__text Пассажиров
+				//- .passengers__counter 
+				//- 	a(href="#").passengers__btn.passengers__btn-plus +
+				//- 	input(type="text", disabled, value="2").passengers__input
+				//- 	a(href="#").passengers__btn.passengers__btn-minus &ndash;
 
-
+			.counter.counter_dispatch
+				.counter__title Пассажиров
+				.counter__box 
+					button.counter__plus(data-counter = 'plus')
+					.counter__input-wrap
+						input.counter__input(value='2')
+					button.counter__minus(data-counter = 'min')
 
 	.row
 		.col-xs-12.content-center

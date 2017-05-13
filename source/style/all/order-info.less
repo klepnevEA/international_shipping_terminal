@@ -9,7 +9,7 @@
     
     &__head {
     	text-align: center;
-    	padding: 13px;
+    	padding: @sp;
     	font-size: 32px;
     	font-family: 'Open Sans Bold';
     	text-transform: uppercase;
@@ -19,7 +19,7 @@
 
     &__body {
     	background-color: #fff;
-    	padding: @sp 0 ;
+    	padding: 20px 0 ;
 
     }
 
@@ -28,6 +28,8 @@
     	font-size: 28px;
     	color: #000;
         margin: 0 auto;
+        padding: 0 10px;
+        width: 100%;
     	
     	tr td:first-child {
     		font-family: 'Open Sans Bold';
@@ -35,7 +37,7 @@
     		font-size: 22px;
     		text-transform: uppercase;
     		width: 240px;
-    		text-align: right;
+    		text-align: left;
     		padding-bottom: @sp/3;
             padding-top: 6px;
     	}
@@ -71,6 +73,52 @@
     &__cost-cop {
     	font-family: 'Open Sans Bold';
     	font-size: 21px;
+    }
+
+    &__from-to {
+        .clearfix;
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 @sp/3;
+        
+        &__title {
+            float: left;
+            margin-right: @sp;
+        }
+        &__sity {
+            position: relative;
+            min-width: 110px;
+            margin: 0 @sp 0 @sp;
+            top: -5px;
+            float: left;
+            position: relative;
+            font-size: 24px;
+            font-family: 'Open Sans Bold';
+            text-transform: uppercase;
+        }
+
+        &__dash {
+            float: left;
+            width: 55px;
+            height: 25px;
+            background-image: url(../img/svg/dash.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        &__station {
+            position: absolute;
+            width: 190px;
+            height: 29px;
+            overflow: hidden;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            line-height: 0.875;
+            text-transform: none;
+        }
     }
 }
 
