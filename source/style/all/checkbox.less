@@ -5,7 +5,9 @@
   
   width: 17px;
   height: 17px;
+ 
 }
+
 
 .checkbox + label {
   cursor: pointer;
@@ -18,7 +20,7 @@
 .checkbox:not(checked) + label {
   display: inline-block;
   height: 70px;
-  margin: @sp 0 0;
+  margin: 40px 0 -5px;
   line-height: 1.1;
   position: relative; 
   padding: 0 0 0 80px;
@@ -26,11 +28,16 @@
   font-family: 'Open Sans Bold';
 }
 
+.checkbox_margin-left-15:not(checked) + label {
+  margin-left: -@sp;
+}
+
+
 .checkbox:not(checked) + label:before {
   content: '';
   position: absolute;
   box-sizing: border-box;
-  top: -5px;
+  top: -19px;
   left: 0;
   width: 65px;
   height: 65px;
@@ -44,7 +51,7 @@
   content: '\f12c';
   font-family: "Material Design Icons";
   position: absolute;
-  top: -12px;
+  top: -25px;
   left: 0px;
   font-size: 65px;
   color: #fff;

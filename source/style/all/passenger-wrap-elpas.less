@@ -28,6 +28,12 @@
 		}
 	}
 
+	.input__btn-block__sex {
+		height: 60px;
+	}
+
+
+
 	.input__arrow-down:before {
 		right: 10px;
     	top: 40px;
@@ -71,6 +77,18 @@
 					
 		}
 
+	}
+
+	.checkbox:not(checked) + label {
+		margin: @sp 0 -@sp/3px;
+	}
+
+	.checkbox:not(checked) + label:before {
+		top: -@sp/3px;
+	}
+
+	.checkbox:not(checked) + label:after {
+		top: -12px;
 	}
 }
 

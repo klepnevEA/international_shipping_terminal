@@ -7,7 +7,7 @@
 		.col-xs-12
 			.input__wrap
 				input#from_element.input__elem(type="text")
-				.input__comment Автостанция «Центральная»,  М. «Щелковская»
+				.input__comment.input__comment_hidden Автостанция «Центральная»,  М. «Щелковская»
 				.input__text Откуда
 				.input__hint
 					ul.input__hint__list
@@ -36,7 +36,7 @@
 								.input__hint__name Ярославль
 								.input__hint__text г. Ярославль, Ярославская область, Россия
 			.input__wrap
-				.input__comment Автостанция «Центральная»,  М. «Щелковская»
+				.input__comment.input__comment_hidden Автостанция «Центральная»,  М. «Щелковская»
 				.input__hint
 					ul.input__hint__list
 						li.input__hint__elem
@@ -78,6 +78,8 @@
 					a(href="#").passengers__btn.passengers__btn-plus +
 					input(type="text", disabled, value="2").passengers__input
 					a(href="#").passengers__btn.passengers__btn-minus &ndash;
+
+
 
 	.row
 		.col-xs-12.content-center
