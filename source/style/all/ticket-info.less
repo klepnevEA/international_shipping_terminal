@@ -17,16 +17,17 @@
 		font-family: "Material Design Icons";
 		color: @green;
 		position: absolute;
-		top: 15px;
+		top: 10px;
 		left: 14px;
 		font-size: 55px;
 
 	}
 	&__left {
+		padding: 25px 25px 30px 70px;
 		flex: 1;
-		display: flex;
-		padding: 30px 25px 30px 70px;
-
+		&-wrap {
+			display: flex;
+		}
 	}
 	&__right {
 		background: #f1f2f7;
@@ -36,13 +37,17 @@
 		flex-direction: column;
 		justify-content: center;
 		// align-items: flex-end;
+		&_stops {
+			justify-content: flex-start;
+			padding-top: 50px;
+		}
 	}
 	&__whence {
 		flex: 0 0 275px;
 		position: relative;
 		&-sity {
 			font-size: 32px;
-			font-family: "Open Sans";
+			font-family: "Open Sans Bold";
 			color: rgb(0, 0, 0);
 			font-weight: bold;
 			line-height: 1;
@@ -51,7 +56,7 @@
 			z-index: 10;
 			display: inline-block;
 			padding-right: 10px;
-			margin-bottom: 7px;
+			margin-bottom: 4px;
 			&-line {
 				
 				height: 3px;
@@ -68,7 +73,7 @@
 		flex: 1;
 		&-sity {
 			font-size: 32px;
-			font-family: "Open Sans";
+			font-family: "Open Sans Bold";
 			color: rgb(0, 0, 0);
 			font-weight: bold;
 			line-height: 1;
@@ -119,6 +124,7 @@
 			height: 18px;
 			line-height: 1;
 			margin-bottom: 4px;
+			margin-top: 6px;
 			i {
 				font-size: 24px;
 				display: block;
@@ -160,7 +166,7 @@
 	}
 	&__result {
 		margin-top: 20px;
-		margin-bottom: 35px;
+		margin-bottom: 26px;
 		display: flex;
 		justify-content: space-between;
 		&-time {
@@ -170,6 +176,7 @@
 				font-weight: bold;
 				text-transform: uppercase;
 				line-height: 1;
+				margin-top: 5px;
 			}
 			&-value {
 				font-family: 'Open Sans Bold';
@@ -185,6 +192,79 @@
 			span {
 				font-size: 48px;
 				margin-left: 10px;
+			}
+		}
+	}
+	//пересадки
+	&__stops {
+		
+		border-top: 3px solid @gray_light;
+		padding-top: 22px;
+		margin-top: 28px;
+		&-title {
+			font-size: 18px;
+			font-family: 'Open Sans Bold';
+			color: black;
+			line-height: 1; 
+			text-transform: uppercase;
+		}
+		&-list {
+			margin: 15px 0 10px;
+		}
+		&-item {
+		}
+		&-name {
+			font-family: 'Open Sans Bold';
+			color: @orange;
+			font-size: 16px;
+			line-height: 1;
+			height: 16px;
+			padding-right: 15px;
+			min-width: 175px;
+			padding-bottom: 10px;
+			span{
+				display: block;
+				float: left;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 320px;
+			}
+			i {
+				display: block;
+				float: left;
+				margin-right: 5px;
+			}
+
+
+		}
+		&-date {
+			color: black;
+			font-size: 16px;
+			line-height: 1;
+			height: 16px;
+			text-transform: lowercase;
+			padding-right: 15px;
+			padding-bottom: 10px;
+		}
+		&-time {
+			font-family: 'Open Sans Bold';
+			color: black;
+			font-size: 16px;
+			line-height: 1;
+			height: 16px;
+			padding-bottom: 10px;
+			span {
+				font-family: 'Open Sans';
+				color: #acacac;
+			}
+		}
+		&-btn {
+			.btn {
+				font-size: 22px;
+				line-height: 50px;
+				height: 50px;
+				margin-bottom: -5px;
 			}
 		}
 	}
