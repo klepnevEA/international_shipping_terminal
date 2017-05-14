@@ -24,7 +24,46 @@
 							.ticket-info__travel-time-title <i class="mdi mdi-clock"></i>В пути:
 							.clearfix
 							.ticket-info__travel-time-text 1 дн. 1 ч. 30 мин.
-		.ticket-info__right 
+			.ticket-info__stops
+				.ticket-info__stops-title остановки в пути:
+				table.ticket-info__stops-list
+					tr.ticket-info__stops-item
+						td.ticket-info__stops-name 
+							i.mdi.mdi-checkbox-blank-circle 
+							span Балашиха
+						td.ticket-info__stops-date 15 Мая 2017
+						td.ticket-info__stops-time 14:30 - 14:45 
+							span (UTC +3)
+					tr.ticket-info__stops-item
+						td.ticket-info__stops-name 
+							i.mdi.mdi-checkbox-blank-circle 
+							span Электрогорск
+						td.ticket-info__stops-date 15 Сентября 2017
+						td.ticket-info__stops-time 14:30 - 14:45 
+							span (UTC +3)
+					tr.ticket-info__stops-item
+						td.ticket-info__stops-name 
+							i.mdi.mdi-checkbox-blank-circle 
+							span Покров
+						td.ticket-info__stops-date 15 Мая 2017
+						td.ticket-info__stops-time 14:30 - 14:45 
+							span (UTC +3)
+					tr.ticket-info__stops-item
+						td.ticket-info__stops-name 
+							i.mdi.mdi-checkbox-blank-circle 
+							span Лакинск
+						td.ticket-info__stops-date 15 Мая 2017
+						td.ticket-info__stops-time 14:30 - 14:45 
+							span (UTC +3)
+
+
+
+				.ticket-info__stops-btn
+					a.btn.btn_green(href="#") посмотреть все остановки (15) 
+
+
+
+		.ticket-info__right.ticket-info__right_stops 
 			.ticket-info__price
 				.ticket-info__price-title Цена билета<br>(полный)
 				.ticket-info__price-price 999 300<i class="ico icon-rb-m"></i>
@@ -32,41 +71,11 @@
 				.ticket-info__price-title Итого<br>за все билеты
 				.ticket-info__price-price 300<i class="ico icon-rb-m"></i>
 
+			
 
 
-	.ticket-info 
-		.ticket-info__left 
-			.ticket-info__left-wrap
-				.ticket-info__whence 
-					.ticket-info__whence-sity Екатеринбург
-					.ticket-info__whence-sity-line
-					.ticket-info__text Автостанция «Центральная», <br> М. «Щелковское» 
-					.ticket-info__data
-						.ticket-info__data-wrap
-							.ticket-info__data-data 16 мая 2017
-							.ticket-info__data-time 16:30 
-								span (UTC +3)
 
-				.ticket-info__were
-					.ticket-info__were-sity Владимир
-					.ticket-info__text Автовокзал
-					.ticket-info__data
-						.ticket-info__data-wrap
-							.ticket-info__data-data 16 мая 2017
-							.ticket-info__data-time 16:30 
-								span (UTC +3)
-						.ticket-info__travel-time 
-							.ticket-info__travel-time-title <i class="mdi mdi-clock"></i>В пути:
-							.clearfix
-							.ticket-info__travel-time-text 1 дн. 1 ч. 30 мин.
-		.ticket-info__right 
-			.ticket-info__price
-				.ticket-info__price-title Цена билета<br>(полный)
-				.ticket-info__price-price 2500<i class="ico icon-rb-m"></i>
-			.ticket-info__price
-				.ticket-info__price-title Итого<br>за все билеты
-				.ticket-info__price-price 300<i class="ico icon-rb-m"></i>
-	
+
 
 	.ticket-info__result 
 		.ticket-info__result-time 
