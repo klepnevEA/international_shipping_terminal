@@ -1,5 +1,7 @@
 .city-intercity {
 	margin-bottom: 20px;
+
+
 	
 	&__wrap {
 		border: 3px solid @gray_light;
@@ -26,7 +28,13 @@
 	    text-decoration: none;
 	    line-height: 2.3;
 	    text-transform: uppercase;
-	    
+
+		&:active {
+			background-color: @green_dark !important;
+			box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+			border:0px solid @green;
+			padding: 3px;
+		}
 
 	    
 	    &:last-child {

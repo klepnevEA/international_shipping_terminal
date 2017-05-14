@@ -199,6 +199,13 @@ $(document).ready(function() {
 
 	$("#phone_number_new").mask("(999) 999 99 99");
 
+
+	/*свитчер на buy-28*/
+
+	$('.city-intercity__btn').on('click' , function() {
+		$('.city-intercity__btn').removeClass('active');
+		$(this).addClass('active');
+	})
 });
 
 
