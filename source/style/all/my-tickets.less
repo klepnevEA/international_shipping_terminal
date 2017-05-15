@@ -218,7 +218,6 @@
 				position: relative;
 				font-size: 16px;
 				text-transform: uppercase;
-				line-height: 1.2;
 				font-family: 'Open Sans Bold';
 				background-color: #fff;
 				max-width: 180px;
@@ -227,13 +226,16 @@
 				
 				& span {
 					position: absolute;
-					bottom: -18px;
+					bottom: -19px;
 					display: block;
 					font-size: 14px;
 					font-family: 'Open Sans';
 					text-transform: none;
-					width: 185px;
+					width: 175px;
 					height: 20px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+    				white-space: nowrap;
 				}
 			
 

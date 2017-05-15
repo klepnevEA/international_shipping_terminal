@@ -70,7 +70,6 @@
     	align-items: center;
 	    
 	    &:after {
-	    	height: 17px;
 	    	padding-right: 15px;
 	    	background-image: url(../img/svg/ruble.svg);
 	    	background-repeat: no-repeat;
@@ -254,6 +253,20 @@
 			padding: 4px 3px 10px;
 			&:after {
 				
+			}
+		}			
+	}
+
+	&-not-active {
+		opacity: 1 !important;
+		pointer-events: none;
+		cursor: default;
+		
+		& .ui-state-default {
+			color: @gray !important;
+			padding:8px 3px 10px;
+			&:after {
+				display: none !important;
 			}
 
 			&:before {
