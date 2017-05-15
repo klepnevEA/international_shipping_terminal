@@ -20,7 +20,7 @@ $(document).ready(function() {
 	updateDatePickerCells();
 	function updateDatePickerCells(dp) {
 		setTimeout(function () {
-			var cellContents = {10: '999 999', 13: '1 200', 15: '500',16: '600', 17: '550', 19: '700', 28: '450'};
+			var cellContents = {10: '999 999', 13: '1 200', 15: '500',16: '600', 17: '550', 19: '700', 28: '450 000'};
 
 			$('.ui-datepicker td > *').each(function (idx, elem) {
 				var value = cellContents[idx + 1] || 0;

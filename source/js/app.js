@@ -53,8 +53,15 @@ $(document).ready(function() {
 	    slidesToShow: 2,
 	    slidesToScroll: 2,
 	    verticalSwiping: true
+	});
 
-	   
+	$(".my-tickets__slider").slick({
+	    dots: false,
+	    arrows: true,
+	    vertical: true,
+	    slidesToShow: 3,
+	    slidesToScroll: 1,
+	    verticalSwiping: true
 	});
 
 	/*с пересадкой / без пересадки*/
