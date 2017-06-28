@@ -5,7 +5,7 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	z-index:9999;
 	text-align: center;
 	vertical-align: middle;
@@ -23,8 +23,16 @@
 	&__title {
 		margin: 0 0 @sp*2 0;
 		font-size: 34px;
-		font-family: "Open Sans";
+		font-family: "Open Sans Bold";
 		color: @gray_light;
+		
+		&_error {
+			margin: 0;
+			color: @gray;
+			font-size: 26px;
+			text-align: center;
+			text-transform: uppercase;
+		}
 	}
 	
 	&__wrap {
@@ -41,6 +49,76 @@
 			width: 710px;
 		}
 
+	}
+
+	&_citizenship {
+		& .popup__wrap {
+			width: 1150px;
+			padding: 25px 45px;
+			height: 395px;
+			top: -60%;
+			
+		}
+
+		& .input__wrap {
+			padding: 17px 25px 17px 25px;
+			
+			&.active {
+				& .input__text {
+					top: 6px;
+    				left: 25px;
+				}
+			}
+		}
+
+		& .popup__title {
+			font-size: 34px;
+			font-family: "Open Sans";
+			text-align: center;
+			line-height: 0.882;
+		}
+
+		& .input__wrap:after {
+			content: '';
+		}
+
+		& .input__text {
+			left: 25px;
+			top: 16px;
+		}
+
+		& .input__hint {
+			top: 5px;
+			
+			&__list {
+				margin-top: @sp;
+			}
+			
+			&__elem {
+				vertical-align: top;
+				height: 80px;
+				padding: 10px @sp;
+			}
+
+			&__link {
+				display: inline-block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+			} 
+
+			&__name {
+				position: absolute;
+				top: 50%;
+				transform: translate( 0, -50%);
+				line-height: 1.1;
+				font-size: 22px;
+			}
+			
+			&.active {
+				height: 275px;
+			}
+		}
 	}
 }
 

@@ -10,16 +10,17 @@
 			//-пасаажир 1
 			.passenger-wrap#passenger_1.tab-pane.active
 				.row
-					.col-xs-4
-						.input__wrap.input__wrap_plain
+					.col-xs-12
+						.input__wrap.input__wrap_plain.input__wrap_padding-20
 							input.input__elem(type="text", placeholder="")
 							.input__text Фамилия
-					.col-xs-4
-						.input__wrap.input__wrap_plain
+				.row
+					.col-xs-6
+						.input__wrap.input__wrap_plain.input__wrap_padding-20
 							input.input__elem(type="text", placeholder="")
 							.input__text Имя
-					.col-xs-4
-						.input__wrap.input__wrap_plain
+					.col-xs-6
+						.input__wrap.input__wrap_plain.input__wrap_padding-20
 							input.input__elem(type="text", placeholder="")
 							.input__text Отчество
 				.row
@@ -27,10 +28,21 @@
 						.input__wrap.input__wrap_plain
 							input.input__elem#birthday(type="text", placeholder="")
 							.input__text Дата рождения
+					//- .col-xs-6
+					//- 	.input__wrap.input__wrap_plain
+					//- 		input.input__elem#phone_number(type="text", placeholder="")
+					//- 		.input__text Мобильный телефон
 					.col-xs-6
-						.input__wrap.input__wrap_plain
-							input.input__elem#phone_number(type="text", placeholder="")
-							.input__text Мобильный телефон
+						.input__wrap.input__arrow-down.input__wrap_plain.active
+							select.input__elem.selectpicker(data-size="5")
+
+								option(value='1') тариф 1
+								option(value='2') тариф 2
+								option(value='3') тариф 3
+								option(value='4') тариф 4
+								option(value='5') тариф 5
+								option(value='6') тариф 6
+							.input__text тарифы
 							
 				.row
 					.col-xs-6
@@ -43,16 +55,9 @@
 							.input__text Серия и номер											
 				.row
 					.col-xs-6
-						.input__wrap.input__arrow-down.input__wrap_plain.active
-							select.input__elem.selectpicker(data-size="5")
-
-								option(value='1') Россия
-								option(value='2') Украина
-								option(value='3') Беларусь
-								option(value='4') Литва
-								option(value='5') США
-								option(value='6') Гернания 
-							.input__text гражданство	
+						.input__wrap.input__arrow-down.input__wrap_plain.popup_open(data-popup="popup_2")
+							input.input__elem#citizenship(type="text", placeholder="", disabled)
+							.input__text Гражданство		
 					.col-xs-6
 						.input__wrap.input__wrap_plain
 							
@@ -68,16 +73,18 @@
 
 	.row
 		.col-xs-12
-			.card_marker
-				img.card_marker__img(src="img/img_card_marker.png")
+			a.popup_open(href="#", data-popup="popup_3") вывести ошибки (для теста)
 
-				.card_marker__checkbox
-					input#checkbox.checkbox(type='checkbox')
-					label(for='checkbox') 
+			//- .card_marker
+				//- img.card_marker__img(src="img/img_card_marker.png")
 
-				.card_marker__text Выдать карту «ЭЛПАСС»
-					span С картой ЭЛПАСС можно пользоваться городскими, пригородными и междугородными автобусами
+				//- .card_marker__checkbox
+				//- 	input#checkbox.checkbox(type='checkbox')
+				//- 	label(for='checkbox') 
 
+				//- .card_marker__text 
+				//- 	span тут выводятся сведения об ошибках
+					//Константинопольский
 
 
 	.row
@@ -101,3 +108,39 @@
 									a(href='#doc4') Свидетельсто о рождении
 								li.document-list__item.popup_close
 									a(href='#doc5') Иностранный паспорт
+
+	.popup.popup_citizenship.popup_close#popup_2 
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title Гражданство
+					.popup__body
+						.input__wrap
+							input#from_element.input__elem(type="text")
+							.input__text Гражданство
+							.input__hint
+								ul.input__hint__list
+									li.input__hint__elem
+										a(href="#").input__hint__link
+											.input__hint__name Российская Федерация
+									li.input__hint__elem
+										a(href="#").input__hint__link
+											.input__hint__name Украина
+									li.input__hint__elem
+										a(href="#").input__hint__link
+											.input__hint__name Беларусь
+									li.input__hint__elem
+										a(href="#").input__hint__link
+											.input__hint__name Румыния
+									li.input__hint__elem
+										a(href="#").input__hint__link
+											.input__hint__name Корейская Народная Демократическая Республика 
+
+
+	.popup.popup_close#popup_3 
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title.popup__title_error Ошибка
+					.popup__body
+						ul.document-list-error
+							li.document-list__item-error
+								span Оплата наличными временно не доступна

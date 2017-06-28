@@ -8,6 +8,43 @@
 	background-repeat: no-repeat;
 	background-position: center center;
     background-size: 100%;
+    
+    &_rubber {
+    	position: relative;
+    	left: 50%;
+    	height: auto;
+    	max-height: 500px;
+    	background-image: none;
+    	background-color: #fff;
+    	border: 2px solid @orange;
+    	border-radius: 10px;
+		width: 80%;
+		transform: translate(-50%, 0);
+		
+		.bus__places {
+			position: relative;
+			top: 0;
+			left: 0;
+			padding: 10px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.bus__plase {
+			margin-left: @sp;
+			&:nth-child(2n) {
+				margin-bottom: 0;
+			}
+
+			&:nth-child(21) {
+				margin-left: @sp;
+			}
+
+		}
+    }
 	
 	&__places {
 		position: absolute;
@@ -20,6 +57,7 @@
 	    left: 10px;
 	    width: 86.3%;
 	    height: 111%;
+	    margin-top: 5px;
 	}
 
 	&__plase {
@@ -38,6 +76,7 @@
 		font-size: 24px;
 		color: @gray_light;
 		cursor: default;
+		background-color: #fff;
 		
 		&:nth-child(2n) {
 			margin-bottom: 48px;
@@ -91,7 +130,7 @@
 		display: block;
 	}
 	&__top {
-		height: 200px;
+		height: 180px;
 		.clearfix;
 		&-title {
 			color: black;

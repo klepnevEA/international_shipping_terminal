@@ -3,46 +3,49 @@
 			.lk__allert-text Заказ № 1224 4453 445
 
 .container 
+	//- .dot1#dotdotdot1 Комсомольск на Амуре
 	.row
-		.col-xs-5 
+		.col-xs-12.from-to-order__container
 			.from-to-order.from-to-order_one
 				img(src="img/svg/circles-2.svg").from-to__circles
 				.from-to-order__wrap 
 					.from-to-order_item
 						.from-to-order__elem Откуда:
 						.from-to-order__to
-							.from-to-order__name Москва
+							.from-to-order__name.dot1#dotdotdot1 Комсомольск на Амуре
 							.from-to-order__geo Павелецкий вокзал
 					.from-to-order_item
 						.from-to-order__elem Куда:
 						.from-to-order__to
-							.from-to-order__name Владимир
+							.from-to-order__name Нижний новгород
 							.from-to-order__geo Автовокзал Владимир
-		.col-xs-7 
+
 			.order__infoblock-mini.order__infoblock-mini_one 
 				.order__infoblock-mini-item 	
 					.order__infoblock-mini-start
 						.order__infoblock-info
 							.order__infoblock-mini-time 20:00
 							.order__infoblock-sity
-								.order__infoblock-mini-sity-name Москва
+								.order__infoblock-mini-sity-name.dotdotdot-short Комсомольск на Амуре
 								.order__infoblock-mini-date 15 Мая
 
 						
 					.order__infoblock-mini-middle 
-						.order__infoblock-mini-middle-time 2дн. 10ч. 0мин.
+						.order__infoblock-mini-middle-time 
+							i.mdi.mdi-clock 
+							| 12дн. 10ч. 10мин.
 
 					.order__infoblock-mini-finish
 						.order__infoblock-info
 							.order__infoblock-mini-time 20:00
 							.order__infoblock-sity
-								.order__infoblock-mini-sity-name Екатеринбург 
+								.order__infoblock-mini-sity-name.dotdotdot-short Александровск-Сахалинский 
 								.order__infoblock-mini-date 15 Мая 
 
 				
 		.col-xs-12
 			.order-ticket
-				.order-ticket__header Москва — Владимир
+				.order-ticket__header Александровск-Сахалинский — Петропавловск-Камчатский
 				.order-ticket__list
 					.order-ticket__number
 						<i class="mdi mdi-seat-recline-extra"></i>
@@ -51,8 +54,8 @@
 					.order-ticket__name Иван Петрович И.
 					.order-ticket__btn 
 						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
-					.order-ticket__rate тариф<br>детский
-					.order-ticket__price 200<i class="ico icon-rb-m"></i>
+					.order-ticket__rate тариф<br>детский<br>без места
+					.order-ticket__price 100<i class="ico icon-rb-m"></i>
 				.order-ticket__list
 					.order-ticket__number
 						<i class="mdi mdi-seat-recline-extra"></i>
@@ -62,16 +65,61 @@
 					.order-ticket__btn 
 						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
 					.order-ticket__rate тариф<br>полный
-					.order-ticket__price 400<i class="ico icon-rb-m"></i>
+					.order-ticket__price 4 000<i class="ico icon-rb-m"></i>
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 15
+						.order-ticket__number-text номер места
+					.order-ticket__name Карта №123456
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>полный
+					.order-ticket__price 100 000<i class="ico icon-rb-m"></i>
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 15
+						.order-ticket__number-text номер места
+					.order-ticket__name Карта №123456
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>полный
+					.order-ticket__price 10<i class="ico icon-rb-m"></i>		
+				.order-ticket__list
+					.order-ticket__number
+						<i class="mdi mdi-seat-recline-extra"></i>
+						.order-ticket__number-value 15
+						.order-ticket__number-text номер места
+					.order-ticket__name Карта №123456
+					.order-ticket__btn 
+						a(href="#").btn.btn_green <i class="mdi mdi-pencil"></i>изменить
+					.order-ticket__rate тариф<br>полный
+					.order-ticket__price 40 000<i class="ico icon-rb-m"></i>			
 			
-			
+	.row
+		.col-xs-6.baggage-allowance_col-pr-0
+			.baggage-allowance
+				.baggage-allowance__info
+					.baggage-allowance__info-text <i class="mdi mdi-briefcase"></i> <span>Провоз<br> багажа</span>
+				
+				.baggage-allowance__box 
+					button.baggage-allowance__box__minus(data-counter = 'minus')
+					.baggage-allowance__box__input-wrap
+						input.baggage-allowance__box__input(value='1')
+					button.baggage-allowance__box__plus(data-counter = 'plus')
 
+				.baggage-allowance__info-cost <span class="baggage-allowance__info-cost-val">50</span> <i class="ico icon-rb-m"></i>
+				.baggage-allowance__info-button
+					a.popup_open(href="#", data-popup="baggage-allowance") <i class="mdi mdi-information-outline"></i>
+						
 
-	.ticket-info__result 
-		.ticket-info__result-time 
-			
-		.ticket-info__result-price Итоговая стоимость:
-				span 1 240<i class="ico icon-rb-m"></i>
+		.col-xs-6
+			.ticket-info__result 
+				.ticket-info__result-time 
+					
+				.ticket-info__result-price Итоговая стоимость:
+						span 111 240<i class="ico icon-rb-m"></i>
 
 
 	.row
@@ -88,3 +136,13 @@
 				img(src="img/svg/visa.svg")
 				img(src="img/svg/maestro.svg")
 				| КАРТОЙ
+
+
+
+	.popup.popup_close#baggage-allowance
+		.popup__wrap
+				.popup__wiodow
+					h2.popup__title.popup__title Пояснение
+					.popup__body
+						| Ответ на вопрос
+		

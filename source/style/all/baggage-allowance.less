@@ -1,0 +1,138 @@
+.baggage-allowance {
+	display: flex;
+	height: 70px;
+	margin: @sp 0;
+	padding: 0 7px 0 15px;
+	border: 3px solid #c9cbd8;
+	background-color: #fff;
+	border-radius: 10px;
+	
+	&_col-pr-0 {
+		padding-right: 0;
+	}
+		
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex: 0 1 130px;
+		height: 100%;
+		font-family: 'Open Sans Semibold';
+		margin-right: 20px;
+		font-size: 30px;
+		
+		&-text {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;			
+			& i {
+				position: relative;
+				top: -4px;
+				color: @green;
+				font-size: 48px;
+				margin-right: 10px;
+			}
+
+			& span {
+				position: relative;
+				top: -1px;
+				font-size: 16px;
+				font-family: 'Open Sans Bold';
+				text-transform: uppercase;
+				line-height: 1.2;
+			}
+		}
+
+		&-cost {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex: 0 1 190px;
+			font-size: 44px;
+			font-family: 'Open Sans Bold';
+			line-height: 0.682;
+			
+			i {
+				position: relative;
+				top: -2px;
+			}
+		}
+
+		&-button {
+			display: flex;
+			align-items: center;
+			
+			& a {
+				position: relative;
+				top: 2px;
+				color: @orange;
+				font-size: 49px;
+			}
+		}
+	}
+
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+				
+		 &__plus,
+		 &__minus{
+			position: relative;
+			outline: none;
+			padding: 0;
+			margin: 0;
+			width: 50px;
+			height: 50px;
+			background-color: @green;
+	        border-radius: 50%;
+	        border: 0;
+	        
+	        &:hover {
+	        	box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+	        }
+
+			&:active {
+				background-color: @green_dark;
+			}
+	        
+			
+			&:before {
+			    content: "\F415";
+			    font-size: 50px;
+			    color: white;
+			    font-family: "Material Design Icons";
+			    position: absolute;
+			    top: -2px;
+			    left: 0px;	
+			}
+		}
+
+		&__minus {
+			background-color: #c9cbd8;
+			
+			&:before {
+			    content: "\F374";
+			}
+
+			&:active {
+				background-color: @gray_dark;
+			}
+		}
+
+
+		&__input {
+			width: 100%;
+			text-align: center;
+			font-size: 44px;
+			line-height: 0.682;
+			font-family: 'Open Sans Bold';
+			border: 0;
+			outline: 0;
+			&-wrap {
+				width: 65px;
+			}
+		}
+	}
+}

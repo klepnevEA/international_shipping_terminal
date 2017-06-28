@@ -89,11 +89,17 @@ select.selectpicker {
 
 // The selectpicker components
 .bootstrap-select.btn-group {
+    &.open {
+      z-index:1000;
+    }
+
   &:not(.input-group-btn),
   &[class*="col-"] {
     float: none;
     display: inline-block;
     margin-left: 0;
+    
+
   }
 
   // Forces the pull to the right, if necessary
