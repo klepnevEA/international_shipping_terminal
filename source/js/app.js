@@ -257,7 +257,7 @@ $(document).ready(function() {
 	});
 
 	$('.dotdotdot-short').dotdotdot({
-		maxLength:11,
+		maxLength:12,
 		ellipsis	: '.',
 	});
 });
