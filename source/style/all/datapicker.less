@@ -25,6 +25,8 @@
 			background-color: @green;
 			color: #fff !important;
 			
+
+			
 			&:active {
 				background-color: @green_dark !important;
 				
@@ -36,6 +38,18 @@
 		}
 
 	} 
+
+	&__price {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		bottom: 2px;
+		width: 100%;
+		font-size: 19px;
+		font-family: 'Open Sans Bold';
+		color: @green;
+		font-weight: bold;
+	}
 }
 
 .ui-datepicker-next,
@@ -287,4 +301,27 @@
 			}
 		}			
 	}
+
+}
+
+.ui-datepicker-calendar {
+	td {
+		&:after {
+			content: none !important;
+		}			
+	}
+}
+
+.ui-state-disabled {
+	.datepicker__price {
+		display: none;
+	}
+}
+
+.ui-state-active+.datepicker__price span {
+	color: #fff !important;
+}
+
+.ui-datepicker-today.ui-state-not-active a {
+	background-color: #FFF;
 }

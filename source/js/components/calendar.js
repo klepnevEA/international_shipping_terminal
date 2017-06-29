@@ -20,25 +20,22 @@ $(document).ready(function() {
 	updateDatePickerCells();
 	function updateDatePickerCells(dp) {
 		setTimeout(function () {
-			var cellContents = {10: '999 999', 13: '1 200', 15: '500',16: '600', 17: '550', 19: '700', 28: '450 000'};
+			var cellContents = {10: '999 999', 13: '1 200', 15: '500',16: '600', 17: '550', 19: '700', 28: '450 000', 33: '450 000'};
 
 			$('.ui-datepicker td').each(function (idx, elem) {
 
 				var value = cellContents[idx + 1] || 0;
 
 				var className = 'datepicker-content-' + CryptoJS.MD5(value).toString();
-
-				if(value == 0)
-					addCSSRule('.ui-datepicker td.' + className + ':after {content: "\\a0";}'); //&nbsp;
-					
+				if(value == 0 && !$(this).hasClass('ui-state-disabled')) {
+						//addCSSRule('.ui-datepicker td.' + className + ':after {content: "\\a0";}'); //&nbsp;
+						$(this).addClass('ui-state-not-active');
+					}
 				else
-
-					// addCSSRule('.ui-datepicker td.' + className + ':after {content: "' + value + '";}');
-					// addCSSRule('.ui-datepicker td.' + className + ':before {content: "p";}');
-					$('.' + className).append('<div>' + value + '</div>');
-					console.log('.' + className);
-
-
+					{
+						// addCSSRule('.ui-datepicker td.' + className + ':after {content: "' + value + '";}');
+						$(this).append('<div class="datepicker__price"><span>' + value + '</span> <span><i class="ico icon-rb-5"></i></span></div>');
+					}
 
 				$(this).addClass(className);
 			});
