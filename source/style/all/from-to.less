@@ -1,6 +1,10 @@
 .from-to {
 	.clearfix;
 	padding:25px 0;
+	
+	&__wrap {
+		min-width: 514px;
+	}
 
 	&__circles {
 		float: left;
@@ -38,17 +42,18 @@
 		&__elem {
 			color: @gray;
 			display: inline-block;
-			flex: 0 0 140px;
+			flex: 0 0 129px;
 			font-family: 'Open Sans Bold';
 			font-size: 32px; 
+			letter-spacing: -1px;
 		}
 		&__name {
 			//color: black;
 			font-family: 'Open Sans Bold';
-			font-size: 32px;
+			font-size: 30px;
 			height: 36px;
 			line-height: 1;
-			margin-top: 7px;
+			margin-top: 8px;
 			letter-spacing: -1px;
 			width: 327px;
 			overflow: hidden;
@@ -58,6 +63,7 @@
 		&__geo {
 			font-size: 16px;
 			color: black;
+			line-height: 0.4;
 		}
 		&_one {
 			margin-bottom: @sp/3;
