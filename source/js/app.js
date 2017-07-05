@@ -260,6 +260,19 @@ $(document).ready(function() {
 		maxLength:20,
 		ellipsis	: '.',
 	});
+
+	$('.dotdotdot_station').dotdotdot({
+		maxLength:35,
+		ellipsis : '.',
+	});
+
+	$('.dotdotdot_name').dotdotdot({
+		maxLength:25,
+		ellipsis : '.',
+	});
+
+
+
 });
 
 
