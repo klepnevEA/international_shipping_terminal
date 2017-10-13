@@ -9,4 +9,153 @@
 		width: 100%;
 		padding: 38px 0 0;
 	}
+
+	&_tabs {
+		height: 220px;
+
+		.header__wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__tab {
+		display: flex;
+		padding-top: 27px;
+
+		&-block-info {
+			i {
+				line-height: 1 !important;
+				margin-right: 12px !important;
+			}
+		}
+
+		&-item {
+			width: 153px;
+			height: 155px;
+			text-align: center;
+			cursor: pointer;
+
+			a {
+				text-transform: uppercase;
+				font-family: 'Open Sans Bold';
+				font-size: 18px;
+				text-decoration: none;
+				color: #fff;
+				opacity: 0.4;
+			}
+
+			&-card, &-pas, &-ticket {
+				height: 42px;
+				background-position: center center !important;
+				margin: 36px 0 @sp 0;
+				opacity: 0.4;
+			}
+
+			&:first-child {
+				border-left: 2px solid #fff;
+				height: 130px;
+				opacity: 0.4;
+
+				.header__tab-item-card, .header__tab-item-card+a {
+					opacity: 1;
+				}
+
+				&.active {
+					border-left: none;
+					height: 155px;
+					opacity: 1;
+				}
+			}
+
+			&:last-child {
+				border-right: 2px solid #fff;
+				height: 130px;
+				opacity: 0.4;
+
+				.header__tab-item-ticket, .header__tab-item-ticket+a {
+					opacity: 1;
+				}
+
+				&.active {
+					border-left: none;
+					height: 155px;
+					opacity: 1;
+				}
+			}
+
+			&.active {
+				background: #fff;
+				border-top-right-radius: 10px;
+				border-top-left-radius: 10px;
+				border: none;
+
+				.header__tab-item-wrap {
+					border: none;
+				}
+
+				a {
+					color: #000;
+					opacity: 1;
+				}
+
+				.header__tab-item-card, .header__tab-item-pas, .header__tab-item-ticket {
+					opacity: 1;
+				}
+
+				.header__tab-item-card {
+					background: url("../img/svg/cart-g.svg") no-repeat;
+				}
+
+				.header__tab-item-pas {
+					background: url("../img/svg/people-g.svg") no-repeat;
+				}
+
+				.header__tab-item-ticket {
+					background: url("../img/svg/ticket-g.svg") no-repeat;
+				}
+			}
+
+			&-card {
+				background: url("../img/svg/cart-w.svg") no-repeat;
+			}
+
+			&-pas {
+				background: url("../img/svg/people-w.svg") no-repeat;
+			}
+
+			&-ticket {
+				background: url("../img/svg/ticket-w.svg") no-repeat;
+			}
+		}
+	}
+
+	&__cash {
+		font-size: 40px;
+		color: #fff;
+		font-family: 'Open Sans Bold';
+	}
+
+	&__balance, &__lk, &__tel {
+		font-size: 20px;
+		color: #fff;
+		font-family: 'Open Sans Bold';
+	}
+
+	&__cash {
+		margin-bottom: 5px;
+	}
+
+	&__tel {
+		margin-bottom: 35px;
+	}
+
+	&__left {
+		text-align: left;
+
+	}
+
+	&__right {
+		text-align: right;
+	}
 }

@@ -185,19 +185,29 @@
 		&_wr {
 			width: 100%;
 			height: @height-c;
+
+            &_tabs {
+              height: 680px;
+            }
+
 			&-left {
 				float: left;
 				width: @width-lr;
-				
 				height: 1024px - 130px;
+
+				&_tabs {
+					height: 680px;
+				}
 			}
 			&-center {
 				float: left;
 				
 				height: @height-c;
 				width: @width-c;
-				
-				
+
+				&_tabs {
+					height: 680px;
+				}
 			}
 			&-right {
 				float: left;
@@ -291,6 +301,81 @@
 				margin-right: 10px;
 			}
 			
+		}
+	}
+
+	&__table {
+		margin: 45px 0 50px;
+		border: 3px solid #c9cbd8;
+		border-radius: 10px;
+		overflow: auto;
+		max-height: 326px;
+
+		&-row {
+			display: flex;
+			background-color: white;
+			overflow: hidden;
+			justify-content: space-between;
+			height: 79px;
+			align-items: center;
+			padding: 0 32px;
+			border-bottom: 3px solid #c9cbd8;
+
+			&:first-child {
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+
+			&:last-child {
+				border-bottom: none;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+
+			&-item {
+				font-family: 'Open Sans Semibold';
+				font-size: 22.7px;
+				color: black;
+				line-height: 1;
+
+				& .mdi-credit-card {
+					min-width: 240px;
+					display: inline-block;
+				}
+
+				&-document {
+					width: 170px;
+				}
+
+				&-ico {
+					background: url(../img/svg/man-g.svg) no-repeat;
+					background-position: left;
+					height: 35px;
+					padding-left: 48px;
+					display: table-cell;
+					vertical-align: middle;
+					min-width: 486px;
+					text-transform: uppercase;
+				}
+
+				span {
+					&:before {
+						color: @orange;
+						font-size: 48px;
+						vertical-align: middle;
+						padding-right: 10px;
+					}
+				}
+
+				&_thin {
+					font-family: 'Open Sans';
+					font-size: 20px;
+				}
+			}
+		}
+
+		&-ticket-name {
+			display: inline-block;
 		}
 	}
 }
