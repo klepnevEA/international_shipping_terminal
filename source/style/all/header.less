@@ -32,9 +32,11 @@
 
 		&-item {
 			width: 153px;
-			height: 155px;
+			height: 130px;
 			text-align: center;
 			cursor: pointer;
+			border-left: 2px solid #fff;
+			opacity: 0.4;
 
 			a {
 				text-transform: uppercase;
@@ -53,10 +55,6 @@
 			}
 
 			&:first-child {
-				border-left: 2px solid #fff;
-				height: 130px;
-				opacity: 0.4;
-
 				.header__tab-item-card, .header__tab-item-card+a {
 					opacity: 1;
 				}
@@ -70,8 +68,6 @@
 
 			&:last-child {
 				border-right: 2px solid #fff;
-				height: 130px;
-				opacity: 0.4;
 
 				.header__tab-item-ticket, .header__tab-item-ticket+a {
 					opacity: 1;
@@ -89,6 +85,12 @@
 				border-top-right-radius: 10px;
 				border-top-left-radius: 10px;
 				border: none;
+				height: 155px;
+				opacity: 1;
+
+				& + .header__tab-item {
+					border-left: none;
+				}
 
 				.header__tab-item-wrap {
 					border: none;
