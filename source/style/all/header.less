@@ -7,11 +7,11 @@
 	&__wrap {
 		text-align: center;
 		width: 100%;
-		padding: 38px 0 0;
+		padding: 20px 0 0;
 	}
 
 	&_tabs {
-		height: 200px;
+		height: 225px;
 
 		.header__wrap {
 			display: flex;
@@ -32,7 +32,7 @@
 
 		&-item {
 			width: 153px;
-			height: 130px;
+			height: 115px;
 			text-align: center;
 			cursor: pointer;
 			border-left: 2px solid #fff;
@@ -61,7 +61,7 @@
 
 				&.active {
 					border-left: none;
-					height: 155px;
+					height: 140px;
 					opacity: 1;
 				}
 			}
@@ -75,7 +75,7 @@
 
 				&.active {
 					border-left: none;
-					height: 155px;
+					height: 140px;
 					opacity: 1;
 				}
 			}
@@ -85,7 +85,7 @@
 				border-top-right-radius: 10px;
 				border-top-left-radius: 10px;
 				border: none;
-				height: 155px;
+				height: 140px;
 				opacity: 1;
 
 				& + .header__tab-item {
@@ -139,10 +139,20 @@
 		text-align: center;
 	}
 
-	&__balance, &__lk, &__tel {
+	&__balance, &__tel {
 		font-size: 20px;
 		color: #fff;
 		font-family: 'Open Sans Bold';
+	}
+
+	&__lk {
+		font-size: 24px;
+		color: #fff;
+		font-family: 'Open Sans Bold';
+		text-align: center;
+		line-height: 24px;
+		padding: @sp 0 0;
+		text-transform: uppercase;
 	}
 
 	&__cash {

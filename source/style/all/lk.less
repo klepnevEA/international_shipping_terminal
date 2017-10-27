@@ -1,9 +1,62 @@
 .lk {
+	&__tab-card {
+		&-title {
+			font-size: 35px;
+			text-transform: uppercase;
+			font-family: "Open Sans Bold";
+		}
+	}
 
-	&__card-btn-wrap {
-		display: flex;
-		justify-content: space-around;
-		//width: 770px;
+	&__card {
+		background: url("../img/card-bg.png") no-repeat;
+		background-position: center;
+		border-radius: 30px;
+		width: 545px;
+		height: 340px;
+		margin: 0 auto 40px;
+
+		&-discount {
+			color: @gray;
+			padding: 40px;
+			font-size: 14px;
+			text-align: left;
+			font-family: "Open Sans Bold";
+			text-transform: uppercase;
+		}
+
+		&-num {
+			color: #fff;
+			margin-top: 2*@sp;
+			padding: 0 40px;
+			font-size: 48px;
+			text-align: left;
+			font-family: "Open Sans Bold";
+		}
+
+		&-expire {
+			color: #fff;
+			margin-top: @sp;
+			padding: 0 40px;
+			font-size: 14px;
+			text-align: left;
+			font-family: "Open Sans";
+			text-transform: uppercase;
+
+			&_date {
+				font-family: "Open Sans Bold";
+				font-size: 24px;
+			}
+		}
+
+		&-name {
+			color: #fff;
+			margin-top: @sp;
+			padding: 0 40px;
+			font-size: 24px;
+			text-align: left;
+			font-family: "Open Sans Bold";
+			text-transform: uppercase;
+		}
 	}
 
 	.title {
@@ -12,6 +65,7 @@
 		line-height: 1.3;
 		margin-bottom: 73px;
 	}
+
 	.btn_orange_fill {
 		i {
 			font-size: 45px;
