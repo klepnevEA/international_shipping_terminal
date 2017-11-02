@@ -35,8 +35,17 @@
 			height: 115px;
 			text-align: center;
 			cursor: pointer;
-			border-left: 2px solid #fff;
-			opacity: 0.4;
+			position: relative;
+
+			&:before {
+				content: '';
+				border-left: 2px solid #fff;
+				height: 110px;
+				position: absolute;
+				left: 15px;
+				opacity: 0.4;
+				top: 15px;
+			}
 
 			a {
 				text-transform: uppercase;
@@ -44,39 +53,29 @@
 				font-size: 18px;
 				text-decoration: none;
 				color: #fff;
-				opacity: 0.4;
 			}
 
 			&-card, &-pas, &-ticket {
 				height: 42px;
 				background-position: center center !important;
 				margin: 36px 0 @sp 0;
-				opacity: 0.4;
 			}
 
-			&:first-child {
-				.header__tab-item-card, .header__tab-item-card+a {
-					opacity: 1;
-				}
-
-				&.active {
-					border-left: none;
-					height: 140px;
-					opacity: 1;
+			&:nth-child(2) {
+				&:before {
+					left: -15px;;
 				}
 			}
 
 			&:last-child {
-				border-right: 2px solid #fff;
-
-				.header__tab-item-ticket, .header__tab-item-ticket+a {
-					opacity: 1;
-				}
-
-				&.active {
-					border-left: none;
-					height: 140px;
-					opacity: 1;
+				&:after {
+					content: '';
+					border-left: 2px solid #fff;
+					height: 110px;
+					position: absolute;
+					right: 15px;
+					opacity: 0.4;
+					top: 15px;
 				}
 			}
 
@@ -84,25 +83,18 @@
 				background: #fff;
 				border-top-right-radius: 10px;
 				border-top-left-radius: 10px;
-				border: none;
 				height: 140px;
-				opacity: 1;
 
-				& + .header__tab-item {
-					border-left: none;
+				&:before, &:after {
+					display: none;
 				}
 
-				.header__tab-item-wrap {
-					border: none;
+				& + .header__tab-item:before {
+					display: none;
 				}
 
 				a {
 					color: #000;
-					opacity: 1;
-				}
-
-				.header__tab-item-card, .header__tab-item-pas, .header__tab-item-ticket {
-					opacity: 1;
 				}
 
 				.header__tab-item-card {
