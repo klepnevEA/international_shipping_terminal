@@ -1,0 +1,49 @@
+.container.container_padding-top
+	.row
+		.col-xs-12
+			.passenger-block#passTab
+				a(href='#passenger_1').passenger-block__elem.active
+					.passenger-block__text пасажир 1
+				a(href='#passenger_2').passenger-block__elem
+					.passenger-block__text пасажир 2
+				a(href='#passenger_3').passenger-block__elem
+					.passenger-block__text пасажир 3
+				a(href='#passenger_4').passenger-block__elem
+					.passenger-block__text пасажир 4
+				a(href='#passenger_5').passenger-block__elem
+					.passenger-block__text пасажир 5
+
+.lk-menu_wr.lk-menu_wr_tabs
+	.lk-menu_wr-left.lk-menu_wr-left_tabs
+	.lk-menu_wr-center.lk-menu_wr-center_tabs
+		.row
+			.col-xs-12
+				.lk__table
+					.lk__table-row.active
+						.lk__table-row-item
+							.lk__table-row-item-ico Александра Владиславовна И.
+						.lk__table-row-item
+							span.mdi.mdi-credit-card 12345678
+						.lk__table-row-item.lk__table-row-item_thin.lk__table-row-item-document Паспорт иностранного гражданина
+						.lk__table-row-item_thin 7000 343400
+					.lk__table-row
+						.lk__table-row-item
+							.lk__table-row-item-ico Петр Николаевич И.
+						.lk__table-row-item
+							span.mdi.mdi-credit-card 12345678
+						.lk__table-row-item.lk__table-row-item_thin.lk__table-row-item-document Свидетельство о рождении
+						.lk__table-row-item_thin 7000 343400
+					.lk__table-row
+						.lk__table-row-item
+							.lk__table-row-item-ico Владимир Николаевич И.
+						.lk__table-row-item
+							span.mdi.mdi-credit-card 12345678
+						.lk__table-row-item.lk__table-row-item_thin.lk__table-row-item-document Паспорт РФ
+						.lk__table-row-item_thin 7000 343400
+		.row
+			.col-xs-3
+			.col-xs-6.content-center
+				a.btn.btn_green.btn_order-pay(href="#") добавить пассажира
+
+			.col-xs-12.content-center.lk__review-and-pay
+				a.btn.btn_orange_fill(href="#") посмотреть заказ и оплатить
