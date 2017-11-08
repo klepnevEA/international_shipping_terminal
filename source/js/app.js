@@ -73,6 +73,14 @@ $(document).ready(function() {
 	    verticalSwiping: true
 	});
 
+    $(".passenger__slider").slick({
+        dots: false,
+        arrows: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        verticalSwiping: true
+    });
 	/*с пересадкой / без пересадки*/
 
 	$('#checkbox').on('click', function () {

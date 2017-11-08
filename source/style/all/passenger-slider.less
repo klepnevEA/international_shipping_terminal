@@ -1,0 +1,42 @@
+.passenger__slider {
+	margin: @sp 0;
+	.clearfix;
+
+	.slick-arrow {
+		width: 100%;
+		margin: 10px 0;
+		height: 54px;
+		cursor: pointer;
+		.clearfix;
+	}
+	.slick-prev {
+		&:after {
+			background-image: url(../img/svg/st-top.svg);
+		}
+	}
+	.slick-next {
+		margin-bottom: 10px;
+		&:after {
+			background-image: url(../img/svg/st-top.svg);
+			transform: rotate(-180deg);
+		}
+	}
+	.slick-list {
+		width: 100%;
+	}
+
+	.slick-list.draggable {
+		border: 3px solid #c9cbd8;
+		border-radius: 10px;
+		height: 252px !important;
+	}
+
+	.my-tickets__item-info {
+		align-items: center;
+	}
+
+	.lk__table-row.lk__table-row_tickets.slick-slide {
+		border: none;
+		border-bottom: 3px solid #c9cbd8;
+	}
+}
