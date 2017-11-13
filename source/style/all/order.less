@@ -1,4 +1,15 @@
 .order {
+	&__passenger-count {
+		padding: 4*@sp 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		.counter__title {
+			color: #000;
+		}
+	}
+
 	.title {
 		margin-top: 120px;
 		margin-bottom:40px;
@@ -122,10 +133,6 @@
 		}
 	}
 
-
-
-
-
 	&__infoblock-mini {
 		margin-top: 35px;
         flex: 1 1 632px;
@@ -158,11 +165,13 @@
 			margin-top: -13px;
 			position: relative;
 			z-index: 10;
+
 			&:first-child {
 				margin-top: 0;
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 			}
+
 			&:last-child {
 				border-top-left-radius: 0;
 				border-top-right-radius: 0;
@@ -172,6 +181,23 @@
 				}
 
 			}
+		}
+
+		&-item_unreg {
+			background: white;
+			border-style: solid;
+			border-width: 3px;
+			border-color: #c9cbd8;
+			border-radius: 10px;
+			padding: 10px;
+			height: 85px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			justify-content: space-between;
+			line-height: 1;
+			position: relative;
+			z-index: 10;
 		}
 		
 		&-time {
