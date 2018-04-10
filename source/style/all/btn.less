@@ -18,6 +18,34 @@
 	line-height: 70px;
 	outline: none;
 
+	&__general-green {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		border-radius: 100px;
+		padding: 7px 20px;
+		background: @green;
+		font-family: 'Open Sans Bold';
+		font-size: 28px;
+		text-transform: uppercase;
+		height: 58px;
+		outline: none;
+		border: 3px solid #fff;
+
+		&:hover {
+			border: 0 solid @green;
+			box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, 0.23);
+		}
+
+		&:active {
+			background: @green_dark;
+		}
+
+
+	}
+
 	&_right {
 		float: right;
 	}
