@@ -19,8 +19,28 @@
 		}
 	}
 
+	&__phone {
+		font-family: "Open Sans Bold";
+		font-size: 32px;
+		color: #fff;
+	}
+
 	&_new {
 		height: 150px;
+
+		sub {
+			position: inherit;
+			font-size: 70%;
+		}
+
+		.header__cash {
+			font-size: 32px;
+		}
+
+		.label {
+			font-family: "Open Sans";
+			margin-right: 10px;
+		}
 
 		&-logo {
 			width: 95px;
@@ -31,10 +51,22 @@
 		.header__wrap {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 		}
 
 		.header__left {
 			display: flex;
+			align-items: center;
+		}
+
+		.header__right {
+			.btn__general-green {
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
 
 		.btn_main-menu {

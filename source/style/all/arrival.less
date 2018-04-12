@@ -1,0 +1,49 @@
+.arrival {
+	&__label {
+		font-family: "Open Sans Bold";
+		font-size: 24px;
+		margin-right: @sp;
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		padding: @sp 0;
+		align-items: center;
+	}
+
+	&__date {
+		.data {
+
+		}
+	}
+
+	&__time {
+		display: flex;
+		align-items: center;
+
+		.data {
+			border: 2px solid @gray;
+			border-radius: 7px;
+			padding: 5px;
+			display: flex;
+
+			&-item {
+				font-size: 26px;
+				text-transform: uppercase;
+				padding: 5px @sp;
+				font-family: "Open Sans Bold";
+				border-radius: 7px;
+
+				&.active {
+					background: @green;
+					border: 3px solid @green_dark;
+					color: #fff;
+					padding: 5px @sp;
+					font-family: "Open Sans Bold";
+					border-radius: 7px;
+				}
+			}
+		}
+	}
+}
