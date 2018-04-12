@@ -73,6 +73,13 @@ $(document).ready(function() {
 	    verticalSwiping: true
 	});
 
+	$(".dateslider").slick({
+	    dots: false,
+	    arrows: true,
+	    slidesToShow: 1,
+	    slidesToScroll: 1
+	});
+
     $(".passenger__slider").slick({
         dots: false,
         arrows: true,

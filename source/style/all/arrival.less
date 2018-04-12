@@ -10,9 +10,13 @@
 		justify-content: space-between;
 		padding: @sp 0;
 		align-items: center;
+		border-bottom: 3px solid @gray_light;
 	}
 
 	&__date {
+		display: flex;
+		align-items: center;
+
 		.data {
 
 		}
@@ -23,8 +27,8 @@
 		align-items: center;
 
 		.data {
-			border: 2px solid @gray;
-			border-radius: 7px;
+			border: 3px solid @gray_light;
+			border-radius: 10px;
 			padding: 5px;
 			display: flex;
 
@@ -33,7 +37,14 @@
 				text-transform: uppercase;
 				padding: 5px @sp;
 				font-family: "Open Sans Bold";
-				border-radius: 7px;
+				border-radius: 10px;
+				border: 3px solid transparent;
+				cursor: default;
+				margin-right: 2*@sp;
+
+				&:last-child {
+					margin-right: 0;
+				}
 
 				&.active {
 					background: @green;
@@ -41,8 +52,101 @@
 					color: #fff;
 					padding: 5px @sp;
 					font-family: "Open Sans Bold";
-					border-radius: 7px;
+					border-radius: 10px;
 				}
+			}
+		}
+	}
+
+	&__timeline {
+		background: #fff;
+		border-radius: 100px;
+		padding: 7px 10px;
+		margin: 20px 0;
+		display: flex;
+		justify-content: space-between;
+
+		.item {
+			color: @gray_light;
+			font-family: "Open Sans Bold";
+			font-size: 20px;
+			margin-right: @sp;
+
+			&.active-double, &.active-double + .item,
+			&.active-single, &.active-single + .item,
+			&.active-ds, &.active-ds + .item,
+			&.active-sd, &.active-sd + .item {
+				color: #000;
+			}
+
+			&.active-double {
+				position: relative;
+
+				&:before {
+					content: '';
+					border-radius: 20px;
+					border: 3px solid @orange;
+					width: calc((100% + 40px) * 2);
+					position: absolute;
+					height: 40px;
+					top: -10px;
+					left: -10px;
+				}
+			}
+
+			&.active-single {
+				position: relative;
+
+				&:before {
+					content: '';
+					border-radius: 20px;
+					border: 3px solid @orange;
+					width: calc((100% + 55px) * 2);
+					position: absolute;
+					height: 40px;
+					top: -10px;
+					left: -10px;
+				}
+			}
+
+			&.active-ds {
+				position: relative;
+
+				&:before {
+					content: '';
+					border-radius: 20px;
+					border: 3px solid @orange;
+					width: calc((100% + 23px) * 2);
+					position: absolute;
+					height: 40px;
+					top: -10px;
+					left: -10px;
+				}
+			}
+
+			&.active-sd {
+				position: relative;
+
+				&:before {
+					content: '';
+					border-radius: 20px;
+					border: 3px solid @orange;
+					width: calc((100% + 75px) * 2);
+					position: absolute;
+					height: 40px;
+					top: -10px;
+					left: -10px;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			sup {
+				font-family: "Open Sans Bold";
+				font-size: 12px;
+				top: -0.7em
 			}
 		}
 	}
