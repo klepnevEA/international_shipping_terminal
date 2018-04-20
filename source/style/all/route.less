@@ -1,68 +1,194 @@
 .route {
   &__item {
-    border: 3px solid @gray_light;
-    border-radius: 10px;
-    padding: 10px 25px;
+    border: 3px solid @gray;
+    border-radius: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    display: flex;
+
+    .datetime {
+      background: @orange;
+      border-top-left-radius: 20px;
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      padding: @sp 10px 2px;
+      text-align: center;
+
+      .start {
+        margin-bottom: 5px;
+      }
+
+      .start, .end {
+        .time {
+          font-family: "Open Sans Bold";
+          color: #fff;
+          font-size: 32px;
+          position: relative;
+          top: 0;
+          width: auto;
+        }
+
+        .date {
+          font-family: "Open Sans";
+          color: lighten(@orange, 30%);
+          font-size: 15px;
+        }
+      }
+    }
+
+    .route {
+      padding: @sp 0;
+      max-width: 555px;
+
+      .start {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .start, .end {
+        .city {
+          font-family: "Open Sans Bold";
+          font-size: 20px;
+
+          span {
+            font-family: "Open Sans";
+            margin-left: 5px;
+            text-transform: none;
+          }
+        }
+
+        .country {
+          font-family: "Open Sans";
+          font-size: 15px;
+          color: darken(@gray, 15%);
+          text-transform: none;
+        }
+      }
+    }
+
+    .check {
+      i {
+        font-size: 70px;
+        position: relative;
+        top: 30px;
+        color: @orange;
+      }
+    }
+  }
+
+  &__maininfo {
+    display: flex;
+    justify-content: space-between;
     background: #fff;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Open Sans Bold";
-    height: 60px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+    padding-left: 130px;
+    height: 129px;
   }
 
-  .slick-prev, .slick-next {
-    height: 60px;
-    width: 75px;
-    background: @green;
-    border-radius: 15px;
-    margin: 0;
+  &__subinfo {
+    display: flex;
+    padding: @sp 2*@sp;
+    justify-content: space-between;
+
+    &-item {
+      margin-right: 15px;
+      font-size: 15px;
+      font-family: "Open Sans";
+      flex: 1;
+
+      .gray {
+        color: darken(@gray, 10%);
+      }
+
+      .title {
+        font-size: 15px;
+        margin-bottom: 5px;
+        text-transform: none;
+        text-align: left;
+
+
+        &.gray {
+          color: darken(@gray, 10%);
+        }
+      }
+    }
   }
 
-  .slick-prev {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  &__bus-icon {
+    margin-right: 20px;
 
-    &:before {
-      content: '\F142';
-      font-family:"Material Design Icons";
-      color: #fff;
-      font-size: 45px;
-      left: -5px;
-      top: 5px;
+    img {
       position: relative;
-      transform: rotate(180deg);
-      display: block;
-    }
-
-    &:after {
-      display: none;
+      top: 15px;
     }
   }
 
-  .slick-next {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    z-index: 1;
-    right: 23px;
+  &__price {
+    position: relative;
+    flex: 0 0 370px;
 
-    &:before {
-      content: '\F142';
-      font-family:"Material Design Icons";
+    .sticker {
+      display: inline-block;
+      background: @orange;
       color: #fff;
-      font-size: 45px;
-      left: 12px;
-      position: relative;
+      border-radius: 5px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: "Open Sans Bold";
+      position: absolute;
+      top: 10px;
+      right: 227px;
+
+      .mdi-sale {
+        &:before {
+          font-size: 20px;
+          margin-right: 7px;
+          position: relative;
+          top: 1px;
+        }
+      }
     }
 
-    &:after {
-      display: none;
-    }
-  }
+    .price {
+      display: inline-block;
+      background: @green;
+      padding: 20px 20px 21px;
+      border-top-right-radius: 20px;
+      position: absolute;
+      right: -3px;
+      top: -3px;
 
-  .slick-list.draggable {
-    width: 250px;
-    left: -15px;
-    top: 0;
-    z-index: 2;
+      .title {
+        font-family: "Open Sans";
+        font-size: 15px;
+        text-transform: none;
+        margin-bottom: 0;
+        text-align: left;
+        color: lighten(@green, 30%);
+      }
+
+      .cost {
+        font-family: "Open Sans Bold";
+        color: #fff;
+        font-size: 40px;
+
+        sub {
+          bottom: 0px;
+          font-size: 33px;
+        }
+      }
+
+      .tax {
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 15px;
+      }
+    }
   }
 }

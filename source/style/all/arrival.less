@@ -39,8 +39,8 @@
 				font-family: "Open Sans Bold";
 				border-radius: 10px;
 				border: 3px solid transparent;
-				cursor: default;
 				margin-right: 2*@sp;
+				cursor: pointer;
 
 				&:last-child {
 					margin-right: 0;
@@ -53,6 +53,23 @@
 					padding: 5px @sp;
 					font-family: "Open Sans Bold";
 					border-radius: 10px;
+
+					&:active {
+						background-color: @green_dark !important;
+					}
+
+					&:hover {
+						box-shadow: inset 0 5px 2px 0 rgba(0, 0, 0, 0.23);
+						border:0 solid @green;
+						padding: 8px 18px;
+					}
+				}
+
+				&:active {
+					background-color: @green_dark !important;
+					box-shadow: inset 0 5px 2px 0 rgba(0, 0, 0, 0.23);
+					border: 0 solid @green;
+					padding: 8px 18px;
 				}
 			}
 		}
@@ -62,7 +79,7 @@
 		background: #fff;
 		border-radius: 100px;
 		padding: 7px 10px;
-		margin: 20px 0;
+		margin: 10px 0;
 		display: flex;
 		justify-content: space-between;
 
