@@ -1,0 +1,54 @@
+.container
+	.order__title Заказ № 123 458 22
+
+.container
+	.order__info-wrap
+		.order__row
+			.bullet-left
+			.bullet-right
+			.order__row-header
+			div Москва
+			div Перевозчик
+			div Рейс
+
+		.order__row
+			.bullet-left
+			.bullet-right
+			.order__set-info
+				.item
+					span.title место
+					span.num 14
+					span.name Иван Петрович И.
+				.item
+					span.title тариф детский
+					span.cost 1 500.
+						sub 00
+						i.mdi.mdi-currency-rub
+
+		.order__row
+			.bullet-left
+			.bullet-right
+			div 5 багажных мест
+			div 4 500.00 р
+
+.container
+	.order__total
+		span итого:
+		span 22 600.
+			sub 00
+			i.mdi.mdi-currency-rub
+
+.container
+	.order__btn-wrap
+		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+			img(src="img/svg/lg.svg")
+			| с «ЭЛПАСС»
+
+		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+			img(src="img/svg/wallet.svg")
+			| НАЛИЧНЫМИ
+
+		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
+			img(src="img/svg/visa.svg")
+			img(src="img/svg/maestro.svg")
+			| КАРТОЙ
