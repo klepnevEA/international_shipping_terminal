@@ -7,29 +7,81 @@
 			.bullet-left
 			.bullet-right
 			.order__row-header
-			div Москва
-			div Перевозчик
-			div Рейс
+				.time-block
+					.time-block__logo
+						img(src="img/bus-icon-w.png")
+					.time-block__time
+						.from
+							span 20:00
+							span 22 апр. 2018, ср
+
+						.to
+							span 20:00
+							span 22 апр. 2018, ср
+
+				.cost 12 000.
+					sub 00
+					i.mdi.mdi-currency-rub
+			.order__route
+				ul
+					li
+						div
+							span Москва
+							span (Красногвардейская)
+						div Россия
+					li
+						div
+							span Москва
+							span (трасса)
+						div Чертковский район, Ростовская область, Россия
+			.order__carrier Перевозчик:
+				div ИП Белов Эдуард Евгеньевич
+				div ИНН 614300335054
+
+			.order__trip Рейс 787
+				div Красногвардейская АС - Волгодонск
+				div Межрегиональный
 
 		.order__row
 			.bullet-left
 			.bullet-right
 			.order__set-info
 				.item
-					span.title место
-					span.num 14
-					span.name Иван Петрович И.
+					div
+						span.title место
+						span.num 14
+						span.name Иван Петрович И.
+					div
+						span.title тариф детский
+						span.cost 1 500.
+							sub 00
+							i.mdi.mdi-currency-rub
+
 				.item
-					span.title тариф детский
-					span.cost 1 500.
-						sub 00
-						i.mdi.mdi-currency-rub
+					div
+						span.title место
+						span.num 15
+						span.name Иван Петрович И.
+					div
+						span.title тариф детский
+						span.cost 1 500.
+							sub 00
+							i.mdi.mdi-currency-rub
 
 		.order__row
 			.bullet-left
 			.bullet-right
-			div 5 багажных мест
-			div 4 500.00 р
+			.order__set-info
+				.item
+					.order__baggage
+						.logo
+							img(src="img/bag.png")
+						div
+							span.num 5
+							span.title багажных мест
+					.cost 4 500.
+						sub 00
+						i.mdi.mdi-currency-rub
 
 .container
 	.order__total
@@ -43,12 +95,24 @@
 		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
 			img(src="img/svg/lg.svg")
 			| с «ЭЛПАСС»
+			.order__btn-label
+				span К оплате&nbsp;
+					span.sum 22 600.00
+					i.mdi.mdi-currency-rub
 
 		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
 			img(src="img/svg/wallet.svg")
 			| НАЛИЧНЫМИ
+			.order__btn-label
+				span К оплате&nbsp;
+					span.sum 22 600.00
+					i.mdi.mdi-currency-rub
 
 		a.btn.btn_orange_fill.btn_width-100.btn_order-ticket(href="#")
 			img(src="img/svg/visa.svg")
 			img(src="img/svg/maestro.svg")
 			| КАРТОЙ
+			.order__btn-label
+				span К оплате&nbsp;
+					span.sum 22 600.00
+					i.mdi.mdi-currency-rub

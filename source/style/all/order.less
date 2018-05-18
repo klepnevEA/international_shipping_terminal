@@ -7,14 +7,27 @@
 		padding: 50px 0;
 	}
 
-	&__set-info {
+	&__baggage {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		flex: 1;
+		flex: 0 0 210px;
+
+		.title {
+			width: 80px;
+			text-align: left;
+			display: inline-block;
+			top: 2px !important;
+		}
+	}
+
+	&__set-info {
+		width: 100%;
 
 		.item {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 
 			.title {
 				text-transform: uppercase;
@@ -23,7 +36,8 @@
 				margin: 0;
 				margin-right: @sp;
 				color: @gray;
-
+				position: relative;
+				top: -2px;
 			}
 
 			.num {
@@ -52,14 +66,79 @@
 		}
 	}
 
-	&__btn-wrap {
-		display: flex;
+	&__route {
+		padding-left: 40px;
 
-		.btn {
-			margin-right: 20px;
+		li {
+			position: relative;
+			margin-bottom: 20px;
+
+			//line
+			&:after {
+				content: '';
+				height: 100%;
+				border-right: 5px solid @green;
+				position: absolute;
+				left: -21px;
+				top: 19px;
+			}
+
+			//bullet
+			&:before {
+				content: '';
+				width: 15px;
+				height: 15px;
+				border: 5px solid @green;
+				border-radius: 100%;
+				position: absolute;
+				left: -31px;
+				top: -2px;
+			}
 
 			&:last-child {
-				margin-right: 0;
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__btn {
+
+		&-label {
+			background: @orange_dark;
+			width: calc(~"100% + 78px");
+			height: calc(~"100% - 22px");
+			font-size: 18px;
+			padding: 0;
+			position: relative;
+			top: -9px;
+			line-height: 1;
+			left: -39px;
+			border-radius: 0 0 60px 60px;
+			font-family: "Open Sans";
+			text-transform: none;
+
+			span {
+				line-height: 48px;
+
+				.sum {
+					font-family: "Open Sans Bold";
+				}
+			}
+		}
+
+		&-wrap {
+			display: flex;
+
+			.btn {
+				margin-right: 20px;
+				padding-bottom: 40px;
+				height: 110px;
+
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -113,12 +192,51 @@
 		margin-bottom: 10px;
 	}
 
+	&__trip {
+		font-family: "Open Sans Bold";
+		font-size: 15px;
+		line-height: 1;
+
+		div {
+			&:first-child {
+				font-family: "Open Sans";
+				margin: 5px 0;
+			}
+
+			&:last-child {
+				font-family: "Open Sans";
+				color: @gray;
+			}
+		}
+	}
+
+	&__carrier {
+		font-family: "Open Sans";
+		font-size: 15px;
+		line-height: 1;
+		color: @gray;
+
+		div {
+			&:first-child {
+				font-family: "Open Sans";
+				margin: 5px 0;
+				color: #000;
+			}
+
+			&:last-child {
+				font-family: "Open Sans";
+				color: #000;
+			}
+		}
+	}
+
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 3px solid @gray_light;
 		padding: @sp 2*@sp;
 		position: relative;
+		align-items: center;
 
 		&-header {
 			background: @green;
@@ -126,8 +244,73 @@
 			top: -3px;
 			left: -3px;
 			width: calc(~"100% + 6px");
-			height: 60px;
 			border-radius: 10px 10px 0 0;
+			display: flex;
+			justify-content: space-between;
+			padding: @sp 25px;
+			align-content: center;
+
+			sub {
+				bottom: 0;
+			}
+
+			.cost {
+				font-family: "Open Sans Bold";
+				font-size: 38px;
+				color: #fff;
+				line-height: 1;
+			}
+
+			.time-block {
+				display: flex;
+				align-content: center;
+
+				&__time {
+					display: flex;
+					align-content: center;
+
+					.from, .to {
+						span {
+							&:first-child {
+
+							}
+							&:last-child {
+								font-family: "Open Sans Semibold";
+								font-size: 15px;
+							}
+						}
+					}
+
+					.from {
+						margin-right: 2*@sp;
+						position: relative;
+
+						&:before {
+							content: '';
+							border-bottom: 3px solid #fff;
+							width: 30px;
+							position: absolute;
+							right: -15px;
+							top: 15px;
+						}
+					}
+				}
+
+				&__logo {
+					height: fit-content;
+					margin-right: 25px;
+					position: relative;
+					top: 8px;
+				}
+
+				span {
+					font-family: "Open Sans Bold";
+					font-size: 28px;
+					color: #fff;
+					display: block;
+					line-height: 1;
+				}
+			}
 		}
 
 		&:last-child {
@@ -135,7 +318,7 @@
 		}
 
 		&:first-child {
-			padding-top: 5*@sp;
+			padding-top: 85px;
 
 			.bullet-left, .bullet-right {
 				display: none;
