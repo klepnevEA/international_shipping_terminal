@@ -1,5 +1,21 @@
 .container
-	.order__title Заказ № 123 458 22
+	.order__way-info
+		.time-block
+			.time-block__logo
+				img(src="img/bus-icon-orange.png")
+			.order__row-way Туда
+			.time-block__time
+				.from
+					span 20:00
+					span 22 апр. 2018, ср
+
+				.to
+					span 20:00
+					span 22 апр. 2018, ср
+
+		.cost 12 000.
+			sub 00
+			i.mdi.mdi-currency-rub
 
 .container
 	.order__info-wrap
@@ -10,6 +26,7 @@
 				.time-block
 					.time-block__logo
 						img(src="img/bus-icon-w.png")
+					.order__row-way Обратно
 					.time-block__time
 						.from
 							span 20:00
