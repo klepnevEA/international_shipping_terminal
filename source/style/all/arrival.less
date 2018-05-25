@@ -88,6 +88,11 @@
 			font-family: "Open Sans Bold";
 			font-size: 20px;
 			margin-right: @sp;
+			z-index: 2;
+
+			&:before {
+				z-index: 1;
+			}
 
 			&.active-double, &.active-double + .item,
 			&.active-single, &.active-single + .item,
